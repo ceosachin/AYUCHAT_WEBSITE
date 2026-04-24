@@ -1,121 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import { AppProvider } from "./context/AppContext";
+import ScrollRestoration from "./components/ScrollRestoration";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
+import Articles from "./pages/Resources/Articles";
+import Help from "./pages/Resources/Help";
+import MediaKitPage from "./pages/Resources/Media-kit";
+import BulkCampaign from "./pages/Product/Bulk-Campaign";
+import Chatbot from "./pages/Product/Chatbot";
+import Automation from "./pages/Product/Automation";
+import StartupProgram from "./pages/More/Startup";
+import PartnerProgram from "./pages/More/Partner";
+import MultiBusiness from "./pages/Product/Multi-Business";
+import LiveInbox from "./pages/Product/LiveInbox";
+import Pricing from "./pages/pricing/Pricing";
+import Feature from "./pages/Feature/Feature";
+import Integration from "./pages/Integration/Integration";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/Footer";
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <Provider store={store}>
+      <AppProvider>
+        <Router>
+          <Navbar/>
+          <ScrollRestoration>
+            
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/resources/articles" element={<Articles />} />
+              <Route path="/resources/help" element={<Help />} />
+              <Route path="/resources/media-kit" element={<MediaKitPage />} />
+              <Route path="/products/bulk-campaigns" element={<BulkCampaign />} />
+              <Route path="/products/multi-business" element={<MultiBusiness />} />
+              <Route path="/products/chatbot-builder" element={<Chatbot />} />
+              <Route path="/products/automation" element={<Automation />} />
+              <Route path="/products/liveinbox" element={<LiveInbox />} />
+              <Route path="/more/startup-program" element={<StartupProgram />} />
+              <Route path="/more/partner-program" element={<PartnerProgram />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/feature/contact-crm" element={<Feature />} />
+              <Route path="/integration" element={<Integration />} />
+            </Routes>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+          </ScrollRestoration>
+          <Footer/>
+        </Router>
+      </AppProvider>
+    </Provider>
+  );
 }
 
-export default App
+export default App;
