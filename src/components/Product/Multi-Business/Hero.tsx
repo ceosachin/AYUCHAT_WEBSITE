@@ -108,7 +108,6 @@ export default function Hero() {
   );
 }
 
-/* ✅ Progress Component */
 function Progress({ label = "", value = "0%", text = "" }) {
   const width = value.includes("%") ? value : "0%";
 

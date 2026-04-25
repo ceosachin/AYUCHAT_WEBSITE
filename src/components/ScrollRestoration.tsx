@@ -28,7 +28,6 @@ function ScrollRestoration({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ❌ prevent render until scroll restored
   if (!ready) return null;
 
   return <>{children}</>;

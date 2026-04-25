@@ -39,7 +39,6 @@ const Hero = () => {
             className="w-full outline-none text-sm sm:text-base bg-transparent"
           />
 
-          {/* ✅ Button */}
           <button className="bg-[#0B6B50] hover:bg-green-700 ml-2 p-2 rounded-lg text-white transition active:scale-95">
             <Search size={18} />
           </button>

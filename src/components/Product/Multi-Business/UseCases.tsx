@@ -60,7 +60,6 @@ export default function UseCases() {
   );
 }
 
-/* ✅ Card Component */
 type CardProps = {
   icon: React.ElementType;
   title: string;

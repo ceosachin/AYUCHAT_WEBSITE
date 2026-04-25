@@ -27,7 +27,7 @@ const ArticleCard = ({
   viewport={{ once: true }}
   transition={{
     duration: 0.4,
-    ease: [0.34, 1.56, 0.64, 1], // 🔥 pop/bounce effect
+    ease: [0.34, 1.56, 0.64, 1], 
   }}
   whileHover={{
     scale: 1.04,

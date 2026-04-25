@@ -92,8 +92,6 @@ const Stats: React.FC = () => {
 
 export default Stats;
 
-
-/* ✅ Reusable Component */
 type StatBoxProps = {
   value: string;
   label: string;

@@ -77,8 +77,6 @@ const FeatureHighlight: React.FC = () => {
 
 export default FeatureHighlight;
 
-
-/* ✅ Mini Card */
 type StatMiniProps = {
   value: string;
   label: string;

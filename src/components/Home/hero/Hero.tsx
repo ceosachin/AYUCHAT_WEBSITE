@@ -27,7 +27,7 @@ const item: Variants = {
 const Hero: React.FC = () => {
   return (
     <section className="relative py-14 sm:py-20 md:py-24 px-4 sm:px-6 text-center overflow-hidden">
-      
+
       {/* Background */}
       <div className="absolute inset-0 flex justify-center pointer-events-none">
         <div className="w-[500px] sm:w-[700px] md:w-[900px] h-[500px] sm:h-[700px] md:h-[900px] rounded-full mt-[-120px] bg-[radial-gradient(circle,_rgba(242,246,245,0.35)_0%,_rgba(168,198,188,0.2)_25%,_rgba(245,244,244,0)_65%)]" />
@@ -77,11 +77,11 @@ const Hero: React.FC = () => {
           className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
         >
           <button onClick={() => {
-  const el = document.getElementById("cta");
-  el?.scrollIntoView({ behavior: "smooth" });
-}} className="w-full sm:w-auto bg-[#0B6B50] hover:bg-[#0B6B50]/90 text-white py-1 px-5 text-sm sm:text-base font-semibold rounded-lg flex items-center justify-center gap-2 transition">
-            Start for Free - No Card Required 
-            <ArrowRight size={16} strokeWidth={3.5}/>
+            const el = document.getElementById("cta");
+            el?.scrollIntoView({ behavior: "smooth" });
+          }} className="w-full sm:w-auto bg-[#0B6B50] hover:bg-[#0B6B50]/90 text-white py-1 px-5 text-sm sm:text-base font-semibold rounded-lg flex items-center justify-center gap-2 transition">
+            Start for Free - No Card Required
+            <ArrowRight size={16} strokeWidth={3.5} />
           </button>
 
           <button className="w-full sm:w-auto border border-gray-300 hover:bg-gray-100 py-3 px-5 text-sm sm:text-base font-semibold rounded-lg flex items-center justify-center gap-2 transition">

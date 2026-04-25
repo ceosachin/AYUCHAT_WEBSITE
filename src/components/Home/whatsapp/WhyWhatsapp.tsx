@@ -57,8 +57,6 @@ const WhyWhatsapp: React.FC = () => {
 
 export default WhyWhatsapp;
 
-
-/* ✅ Reusable Card */
 type StatCardProps = {
   value: string;
   title: string;

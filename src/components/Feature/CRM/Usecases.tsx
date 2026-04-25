@@ -50,7 +50,7 @@ export default function UseCases() {
     </section>
   );
 }
-// 👇 MUST be in same file OR imported
+
 type CardProps = {
   icon: string;
   title: string;

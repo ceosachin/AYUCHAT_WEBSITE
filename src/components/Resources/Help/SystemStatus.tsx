@@ -6,8 +6,7 @@ export default function SystemStatus() {
       
       {/* LEFT */}
       <div className="flex items-start gap-3">
-        
-        {/* 🔥 PULSE DOT */}
+       
         <div className="relative mt-1">
           <span className="absolute inline-flex h-3 w-3 rounded-full bg-green-400 opacity-75 animate-ping mt-1"></span>
           <span className="relative inline-flex h-3 w-3 rounded-full bg-green-600"></span>

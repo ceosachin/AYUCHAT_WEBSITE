@@ -263,9 +263,8 @@ export default HowItWorks;
 const Tab = ({ label, active, onClick }: any) => (
   <button
     onClick={onClick}
-    className={`px-5 py-2 rounded-full text-sm border ${
-      active ? "bg-[#0B6B50] text-white" : "bg-white"
-    }`}
+    className={`px-5 py-2 rounded-full text-sm border ${active ? "bg-[#0B6B50] text-white" : "bg-white"
+      }`}
   >
     {label}
   </button>

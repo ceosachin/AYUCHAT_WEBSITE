@@ -102,7 +102,6 @@ const FeaturedArticle = () => {
           <span>12 min read</span>
         </div>
 
-        {/* ✅ FIXED BUTTON */}
         <button className="mt-5 bg-[#0B6B50] hover:bg-green-700 text-white text-xs sm:text-sm px-3 py-2 rounded-md flex items-center gap-2 transition">
           Read Full Guide
           <ArrowRight size={14} />
