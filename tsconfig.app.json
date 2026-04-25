@@ -7,7 +7,7 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
 
-    /* ❌ REMOVE baseUrl */
+    "baseUrl": ".",   // ✅ ADD THIS BACK
     "paths": {
       "@/*": ["src/*"]
     },
