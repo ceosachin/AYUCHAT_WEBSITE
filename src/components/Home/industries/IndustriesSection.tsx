@@ -7,12 +7,12 @@ const IndustriesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Tag */}
-        <span className="inline-block px-3 py-1 text-[10px] sm:text-xs bg-[#E6F4EF] text-[#0B6B50] rounded-full font-semibold tracking-wide">
+        <span className="inline-block px-3 py-2 text-[10px] sm:text-xs bg-[#E6F4EF] text-[#0B6B50] rounded-full font-semibold tracking-wide">
           BUILT FOR EVERY INDUSTRY
         </span>
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6 text-[#1C1C1C]">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6 text-[#1C1C1C] font-['Bricolage_Grotesque']">
           One Platform.{" "}
           <span className="text-[#0B6B50]">Every Business.</span>
         </h2>
@@ -36,7 +36,7 @@ const IndustriesSection: React.FC = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-semibold text-base sm:text-lg text-gray-900">
+                  <h3 className="font-semibold text-base sm:text-lg text-gray-900 font-['Bricolage_Grotesque']">
                     {item.title}
                   </h3>
 

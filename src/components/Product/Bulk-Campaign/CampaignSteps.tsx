@@ -86,13 +86,13 @@ export default function CampaignSteps() {
 
         {/* TOP */}
         <div className="text-center mb-10 sm:mb-16">
-          <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium">
+          <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium">
             STEP-BY-STEP
           </span>
 
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6">
             How to Launch a Campaign <br />
-            <span className="text-green-700">
+            <span className="text-[#0B6B50] ">
               in Under 10 Minutes
             </span>
           </h2>
@@ -116,7 +116,7 @@ export default function CampaignSteps() {
                 <div
                   className={`w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg text-xs sm:text-sm font-bold ${
                     active === step.id
-                      ? "bg-green-700 text-white"
+                      ? "bg-[#0B6B50] text-white"
                       : "bg-gray-200 text-gray-600"
                   }`}
                 >
@@ -127,7 +127,7 @@ export default function CampaignSteps() {
                   <h3
                     className={`text-sm sm:text-base font-semibold ${
                       active === step.id
-                        ? "text-green-700"
+                        ? "text-[#0B6B50]"
                         : "text-gray-900"
                     }`}
                   >

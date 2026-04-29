@@ -4,12 +4,16 @@ export default function TicketForm() {
 
       {/* HEADER */}
       <div className="flex items-start gap-3 mb-6 ">
-        <div className="text-pink-500">
-          <img src="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/512px/1f3af_color.png" alt="" className="w-10"/>
-        </div>
+        <div className="text-pink-500 flex justify-center sm:justify-start">
+  <img
+    src="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/512px/1f3af_color.png"
+    alt="target icon"
+    className="w-20 sm:w-10 md:w-12 h-auto"
+  />
+</div>
 
         <div>
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-xl font-semibold font-['Bricolage_Grotesque']">
             Still Need Help? Submit a Ticket
           </h2>
           <p className="text-sm text-gray-600 mt-1">

@@ -1,12 +1,8 @@
-import PricingSection from "@/components/Home/pricing/PricingSection";
 import MetaCharges from "@/components/pricingChat/MetaCharges"
 import PlanComparison from "@/components/pricingChat/PlanComparison"
 import AddOns from "@/components/pricingChat/AddOns";
 import PricingFAQ from "@/components/pricingChat/PricingFAQ";
-
-
-
-
+import PricingSection from "@/components/pricingChat/PricingSection";
 
 const Pricing = () => {
   return (

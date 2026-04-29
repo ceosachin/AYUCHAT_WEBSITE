@@ -1,0 +1,48 @@
+export const pricingPlans = [
+  {
+    name: "Starter",
+    price: 999,
+    desc: "For small businesses getting started with WhatsApp marketing.",
+    features: [
+      "2,000 Contacts",
+      "5 Campaigns per Month",
+      "Template Management",
+      "Basic Inbox",
+      "2 Team Members",
+    ],
+    disabled: ["Chatbot Builder", "Automation Flows"],
+    popular: false,
+  },
+  {
+    name: "Growth",
+    price: 2999,
+    desc: "For growing teams that need automation, chatbots, and advanced analytics.",
+    features: [
+      "10,000 Contacts",
+      "Unlimited Campaigns",
+      "Chatbot Builder",
+      "Automation Flows",
+      "5 Team Members + API",
+      "3 WABA Numbers",
+      "Advanced Analytics",
+    ],
+    disabled: [],
+    popular: true,
+  },
+  {
+    name: "Scale",
+    price: 6999,
+    desc: "For agencies and enterprises needing white-label and unlimited scale.",
+    features: [
+      "Unlimited Contacts",
+      "Unlimited Team Members",
+      "White-Label + Custom Domain",
+      "Sub-Account Management",
+      "Priority SLA Support",
+      "Dedicated Onboarding Manager",
+      "Custom API Integrations",
+    ],
+    disabled: [],
+    popular: false,
+  },
+];

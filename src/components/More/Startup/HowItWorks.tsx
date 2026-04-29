@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 
+
 const steps = [
   {
     title: "Apply in 3 minutes",
@@ -23,6 +24,7 @@ const steps = [
   },
 ];
 
+
 export default function HowItWorks() {
   return (
     <div className="bg-[#F7FAF9] py-20 px-6">
@@ -32,14 +34,14 @@ export default function HowItWorks() {
         <div>
 
           {/* Badge */}
-          <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+          <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium mb-4">
             HOW IT WORKS
           </div>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight font-['Bricolage_Grotesque']">
             180 Days to{" "}
-            <span className="text-green-600">Prove Your Growth</span>
+            <span className="text-[#0B6B50]">Prove Your Growth</span>
           </h2>
 
           {/* Description */}
@@ -57,11 +59,11 @@ export default function HowItWorks() {
                 className="flex items-start gap-4 bg-white border border-[#E6F0EC] rounded-xl p-4"
               >
                 <div className="w-10 h-10 flex items-center justify-center bg-green-100 rounded-lg">
-                  <Check className="text-green-600 w-5 h-5" />
+                  <Check className="text-[#0B6B50] w-5 h-5" />
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-gray-900">
+                  <h4 className="font-semibold text-gray-900 font-['Bricolage_Grotesque']">
                     {step.title}
                   </h4>
                   <p className="text-sm text-gray-600 mt-1">
@@ -118,7 +120,12 @@ export default function HowItWorks() {
 
 /* Small Components */
 
-function Card({ title, value }) {
+type CardProps = {
+  title: string;
+  value: string;
+};
+
+function Card({ title, value }: CardProps) {
   return (
     <div className="flex justify-between items-center bg-[#0C2E26] px-4 py-3 rounded-lg">
       <span className="text-gray-400 text-sm">{title}</span>
@@ -127,7 +134,13 @@ function Card({ title, value }) {
   );
 }
 
-function Progress({ title, value, width }) {
+type ProgressProps = {
+  title: string;
+  value: string;
+  width: string;
+};
+
+function Progress({ title, value, width }: ProgressProps) {
   return (
     <div className="bg-[#0C2E26] px-4 py-3 rounded-lg">
       <div className="flex justify-between text-sm text-gray-400 mb-2">
@@ -137,7 +150,7 @@ function Progress({ title, value, width }) {
       <div className="w-full h-2 bg-[#123C33] rounded-full">
         <div
           className="h-2 bg-green-400 rounded-full"
-          style={{ width: width }}
+          style={{ width }}
         ></div>
       </div>
     </div>

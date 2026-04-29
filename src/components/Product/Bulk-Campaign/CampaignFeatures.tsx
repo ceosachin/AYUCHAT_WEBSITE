@@ -13,37 +13,32 @@ export default function CampaignFeatures() {
       icon: <Users size={20} />,
       title: "Advanced Audience Segmentation",
       desc: "Build campaign audiences using any combination of contact fields — tags, custom attributes, city, last purchase date, campaign history, or opt-in source.",
-      bg: "bg-green-100 text-green-700",
     },
     {
       icon: <Code size={20} />,
       title: "Dynamic Personalization Variables",
       desc: "Map template variables to any contact field. Every recipient gets personalized messages automatically.",
-      bg: "bg-gray-200 text-gray-700",
     },
     {
       icon: <Clock size={20} />,
       title: "Smart Rate-Paced Scheduling",
       desc: "Schedule campaigns and automatically stay within Meta limits while maximizing delivery speed.",
-      bg: "bg-yellow-100 text-yellow-700",
     },
     {
       icon: <BarChart3 size={20} />,
       title: "Real-Time Per-Message Analytics",
       desc: "Track delivery, reads, replies, and export detailed campaign reports.",
-      bg: "bg-purple-100 text-purple-700",
     },
     {
       icon: <AlertTriangle size={20} />,
       title: "Quality Rating Protection Alerts",
       desc: "Get alerts before your WhatsApp quality rating drops or gets restricted.",
-      bg: "bg-red-100 text-red-700",
     },
     {
       icon: <Package size={20} />,
       title: "Multi-Media Message Support",
       desc: "Send images, videos, docs, audio, buttons, and more in one campaign.",
-      bg: "bg-teal-100 text-teal-700",
+     
     },
   ];
 
@@ -52,14 +47,14 @@ export default function CampaignFeatures() {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <div className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium mb-4 sm:mb-6">
+        <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium mb-4 sm:mb-6">
           CAMPAIGN FEATURES
         </div>
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
           Everything You Need to <br />
-          <span className="text-green-700">
+          <span className="text-[#0B6B50]">
             Run High-Converting Campaigns
           </span>
         </h2>
@@ -75,11 +70,11 @@ export default function CampaignFeatures() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white border rounded-xl p-5 sm:p-6 hover:shadow-md hover:border-green-500 transition"
+              className="bg-white  rounded-xl p-5 sm:p-6 hover:shadow-md border border-gray-200 transition"
             >
               {/* Icon */}
               <div
-                className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl mb-3 sm:mb-4 ${item.bg}`}
+                className='w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl mb-3 sm:mb-4 bg-[#E6F4EF] text-[#0B6B50]'
               >
                 {item.icon}
               </div>

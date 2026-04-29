@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#031d17] via-[#062f26] to-[#02110d] text-white flex items-center justify-center px-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#031d17] via-[#062f26] to-[#02110d] text-white flex items-center justify-center sm:py-20 lg:py-24 px-4 sm:px-6 overflow-hidden">
 
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-16 items-center">
 
@@ -10,10 +10,10 @@ export default function Hero() {
         <div>
 
           {/* Breadcrumb */}
-          <div className="flex items-center gap-3 text-sm text-gray-400 mb-6">
+          <div className="flex items-center gap-3 text-sm text-gray-400 mb-6 mt-8 sm:mt-0">
             {/* <span>Home &gt; Bulk Campaigns</span> */}
-            <span className="flex items-center gap-2 border border-emerald-900/90 bg-green-900/40 text-emerald-500 px-3 py-2 rounded-full text-xs font-bold">
-              <div className="rounded-full w-6 h-6  bg-emerald-500 items-center justify-center flex"> <Check size={16} strokeWidth={4.5} className="text-black"/></div>
+            <span className="flex items-center gap-2 border border-emerald-900/90 bg-green-900/40 text-green-400 px-3 py-2 rounded-full text-xs font-bold">
+              <div className="rounded-full w-6 h-6  bg-green-400 items-center justify-center flex"> <Check size={16} strokeWidth={4.5} className="text-black"/></div>
                Official Meta WhatsApp Business API
             </span>
           </div>
@@ -22,7 +22,7 @@ export default function Hero() {
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Send WhatsApp <br />
             Campaigns to <br />
-            <span className="text-emerald-500">Thousands.</span> <br />
+            <span className="text-green-400">Thousands.</span> <br />
             Instantly.
           </h1>
 
@@ -34,15 +34,17 @@ export default function Hero() {
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-4 mt-8">
-            <button className="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-lg font-medium shadow-lg transition">
-              Start Sending Free →
-            </button>
+         <div className="flex flex-col sm:flex-row gap-4 mt-8">
+  
+  <button className="bg-green-500 text-black hover:bg-green-600 px-6 py-3 rounded-lg font-semibold shadow-lg transition">
+    Start Sending Free →
+  </button>
 
-            <button className="border border-white/20 px-6 py-3 rounded-lg hover:bg-white/10 transition">
-              See Live Demo →
-            </button>
-          </div>
+  <button className="border border-white/20 px-6 py-3 rounded-lg hover:bg-white/10 transition">
+    See Live Demo →
+  </button>
+
+</div>
           {/* Features Row */}
 <div className="flex flex-wrap items-center gap-6 mt-6 text-gray-400 text-sm">
 

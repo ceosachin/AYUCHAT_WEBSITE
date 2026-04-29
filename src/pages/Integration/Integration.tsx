@@ -1,9 +1,9 @@
 import CTASection from "@/components/CTASection";
-import Hero from "@/components/Home/Integration/Hero";
-import { StatsStrip } from "@/components/Home/Integration/StatsStrip";
-import IntegrationsGrid from "@/components/Home/Integration/IntegrationsGrid";
-import HowItWorks from "@/components/Home/Integration/HowItWorks";
-import ApiSection from "@/components/Home/Integration/ApiSection";
+import Hero from "@/components/Integration/Hero";
+import { StatsStrip } from "@/components/Integration/StatsStrip";
+import IntegrationsGrid from "@/components/Integration/IntegrationsGrid";
+import HowItWorks from "@/components/Integration/HowItWorks";
+import ApiSection from "@/components/Integration/ApiSection";
 
 const Integration = () => {
   return (

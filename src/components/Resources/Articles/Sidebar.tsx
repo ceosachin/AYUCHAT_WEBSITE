@@ -45,11 +45,11 @@ const topics = [
 
 const Sidebar = () => {
   return (
-    <div className="w-full max-w-[320px] space-y-6 ">
+    <div className="w-full max-w-[340px] sm:max-w-[320px] space-y-6 ">
 
       {/* ================= MOST POPULAR ================= */}
       <div className="bg-[#F8FAF9] border border-gray-200 rounded-2xl p-6 w-full">
-        <h3 className=" font-bold mb-4">Most Popular</h3>
+        <h3 className=" font-bold mb-4 font-['Bricolage_Grotesque']">Most Popular</h3>
 
         {popular.map((item, i) => (
           <div key={i}>
@@ -82,7 +82,7 @@ const Sidebar = () => {
       </div>
 
       {/* ================= BROWSE TOPIC ================= */}
-      <div className="bg-[#F8FAF9] border border-gray-200 rounded-2xl p-6 w-full">
+      <div className="bg-[#F8FAF9] border font-['Bricolage_Grotesque'] border-gray-200 rounded-2xl p-6 w-full">
         <h3 className=" font-bold mb-4">
           Browse by Topic
         </h3>
@@ -101,7 +101,7 @@ const Sidebar = () => {
 
       {/* ================= SUBSCRIBE ================= */}
       <div className="bg-[#0B6B50] text-white p-6 rounded-2xl w-full">
-        <h3 className="text-lg font-bold leading-snug">
+        <h3 className="text-lg font-bold leading-snug font-['Bricolage_Grotesque']">
           Get Weekly WhatsApp Marketing Tips
         </h3>
 
@@ -124,11 +124,11 @@ const Sidebar = () => {
       </div>
 
       {/* ================= CTA ================= */}
-      <div className="bg-[#F8FAF9] border border-gray-200 rounded-2xl p-6 text-center w-full mb-3">
+      <div className="bg-[#F8FAF9] border border-gray-200 rounded-2xl p-6 text-center w-full mb-10">
         
         <div className="text-2xl mb-3">⚡</div>
 
-        <h3 className="font-semibold text-lg leading-snug">
+        <h3 className="font-semibold text-lg leading-snug font-['Bricolage_Grotesque']">
           Try AyuChat Free for 14 Days
         </h3>
 

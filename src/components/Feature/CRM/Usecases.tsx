@@ -1,45 +1,47 @@
+import { Building2, Hospital, Store, Briefcase } from "lucide-react";
+
 export default function UseCases() {
   return (
     <section className="py-24 px-6 bg-[#f6f8f7]">
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium">
+        <span className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-sm font-medium">
           USE CASES
         </span>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold mt-6 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-bold mt-6 leading-tight font-['Bricolage_Grotesque']">
           How Businesses Use This <br />
-          <span className="text-green-600">Feature to Grow</span>
+          <span className="text-[#0B6B50]">Feature to Grow</span>
         </h2>
 
         {/* Cards */}
         <div className="grid md:grid-cols-4 gap-6 mt-16 text-left">
 
           <Card
-            icon="🏢"
+            icon={<Building2 size={22} />}
             title="Digital Marketing Agencies"
             desc="Manage 10, 20, 50 client businesses from one dashboard. Each client sees only their own data — you see everything."
             highlight="Used by agencies managing 20+ clients"
           />
 
           <Card
-            icon="🏥"
+            icon={<Hospital size={22} />}
             title="Hospital Groups"
             desc="One account for multiple hospital branches — each with its own team, WhatsApp number, campaigns, and patient data."
             highlight="↑ 70% admin efficiency for hospital groups"
           />
 
           <Card
-            icon="🏪"
+            icon={<Store size={22} />}
             title="Multi-Brand Retailers"
             desc="Run WhatsApp marketing for your clothing brand, your home furnishings brand, and your food brand — all separately, all from one login."
             highlight="↑ 3x faster campaign management"
           />
 
           <Card
-            icon="💼"
+            icon={<Briefcase size={22} />}
             title="Enterprise Franchises"
             desc="Each franchise location gets its own workspace with local team members and local WhatsApp number — managed by headquarters."
             highlight="Used by franchise businesses with 15+ locations"
@@ -52,7 +54,7 @@ export default function UseCases() {
 }
 
 type CardProps = {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   desc: string;
   highlight: string;
@@ -61,9 +63,13 @@ type CardProps = {
 function Card({ icon, title, desc, highlight }: CardProps) {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition">
-      <div className="text-3xl mb-4">{icon}</div>
 
-      <h3 className="font-semibold text-lg mb-2 text-gray-900">
+      {/* Icon Box */}
+      <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-[#E6F4EF] text-[#0B6B50] mb-4">
+        {icon}
+      </div>
+
+      <h3 className="font-semibold text-lg mb-2 text-gray-900 font-['Bricolage_Grotesque']">
         {title}
       </h3>
 
@@ -71,7 +77,7 @@ function Card({ icon, title, desc, highlight }: CardProps) {
         {desc}
       </p>
 
-      <p className="text-green-600 text-sm font-medium mt-4">
+      <p className="text-[#0B6B50] text-sm font-medium mt-4">
         {highlight}
       </p>
     </div>

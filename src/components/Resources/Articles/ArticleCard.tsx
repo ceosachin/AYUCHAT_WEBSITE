@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 
 type Props = {
@@ -33,7 +33,7 @@ const ArticleCard = ({
     scale: 1.04,
     boxShadow: "0px 12px 30px rgba(0,0,0,0.1)",
   }}
-  className="bg-white rounded-2xl border hover:border-[#0B6B50]/90 overflow-hidden"
+  className="bg-white rounded-2xl overflow-hidden"
 >
 
       {/* ================= TOP SECTION ================= */}
@@ -43,17 +43,17 @@ const ArticleCard = ({
   {variant === "chatbot" && (
     <div className="w-full h-full bg-[#EAF2FF] flex items-center justify-center relative">
 
-      <div className="absolute right-[98px] top-[30px] bottom-[30px] border-r border-dashed border-blue-300"></div>
+      <div className="hidden sm:block absolute right-12 md:right-20 top-6 bottom-6 border-r border-dashed border-blue-300"></div>
 
-      <div className="absolute right-20 top-5 w-9 h-9 bg-blue-200 rounded-full flex items-center justify-center text-[10px] text-blue-700">
-        AI
-      </div>
+<div className="hidden sm:flex absolute right-12 md:right-16 top-5 w-9 h-9 bg-blue-200 rounded-full items-center justify-center text-[10px] text-blue-700">
+  AI
+</div>
 
-      <div className="absolute right-20 bottom-5 w-9 h-9 bg-green-200 rounded-full flex items-center justify-center text-[10px] text-green-700">
-        CRM
-      </div>
+<div className="hidden sm:flex absolute right-12 md:right-16 bottom-5 w-9 h-9 bg-green-200 rounded-full items-center justify-center text-[10px] text-green-700">
+  CRM
+</div>
 
-      <div className="bg-white rounded-xl shadow-md w-[160px] border">
+      <div className="bg-white rounded-xl shadow-md w-[160px] ">
         <div className="bg-blue-600 flex items-center  gap-1 text-white text-[11px] px-3 py-2 rounded-tl-xl rounded-tr-xl text-center">
           <div className="w-4 h-4 bg-blue-300 rounded-full" />
           Devraj Hospital Bot
@@ -74,7 +74,7 @@ const ArticleCard = ({
   {variant === "comparison" && (
     <div className="w-full h-full bg-gradient-to-r from-[#FFF3E0] via-[#FFE0B2] to-[#FFD08A] flex items-center justify-center gap-3">
 
-      <div className="bg-white rounded-xl border border-orange-300 px-3 py-2 text-center w-[110px]">
+      <div className="bg-white rounded-xl border border-orange-300 px-3 py-2 text-center sm:w-[110px] w-[90px] ">
         <p className="text-[11px] text-orange-600 font-semibold">Email</p>
         <div className="w-full h-[4px] bg-orange-200 my-1 rounded" />
         <p className="text-xl font-bold text-orange-500">21%</p>
@@ -100,7 +100,7 @@ const ArticleCard = ({
   {variant === "pricing" && (
     <div className="w-full h-full bg-[#EDE9FE] flex items-center justify-center">
 
-      <div className="bg-white rounded-xl shadow-md w-[240px]  border overflow-hidden">
+      <div className="bg-white rounded-xl shadow-md w-[240px] overflow-hidden">
 
         <div className="bg-gradient-to-r from-[#7C3AED] to-[#6D28D9] text-white text-[11px] font-semibold text-center py-2">
           Meta API Pricing - April 2026
@@ -172,7 +172,7 @@ const ArticleCard = ({
     <div className="flex items-center ">
 
       {/* NEW CONTACT */}
-      <div className="w-16 h-16 border-2 border-pink-200 bg-white rounded-full flex items-center justify-center text-center text-pink-500 text-[11px] font-medium">
+      <div className="sm:w-16 sm:h-16 ml-2 w-16 h-14   border-2 border-pink-200 bg-white rounded-full flex items-center justify-center text-center text-pink-500 text-[11px] font-medium">
         New<br />Contact
       </div>
 
@@ -205,12 +205,12 @@ const ArticleCard = ({
   </svg>
 
   {/* REPLIED */}
-  <div className="bg-[#0B6B50] text-white px-4 py-2 rounded-lg text-[11px] font-medium shadow-sm">
-    Replied ✓
+  <div className="bg-[#0B6B50] text-white sm:px-4 px-2 py-2 mr-3 rounded-lg text-[11px] font-medium shadow-sm">
+    Replied <Check size={14} className="inline-block ml-1" strokeWidth={3.5}  />
   </div>
 
   {/* BOTTOM ANGLED DASH */}
-  <svg className="absolute -left-10 bottom-2" width="50" height="30">
+  <svg className="absolute -left-10 bottom-2" width="50" height="30" >
     <line
       x1="0"
       y1="0"
@@ -223,7 +223,7 @@ const ArticleCard = ({
   </svg>
 
   {/* FOLLOW UP */}
-  <div className="px-3 py-2 border-2 border-pink-200 rounded-lg text-[10px] text-pink-500 bg-white">
+  <div className="sm:px-3 px-2 py-2 mr-3  border-2 border-pink-200 rounded-lg text-[10px] text-pink-500 bg-white">
     No reply → Follow up
   </div>
 
@@ -288,7 +288,7 @@ const ArticleCard = ({
         </span>
 
         {/* Title */}
-        <h3 className="font-semibold text-lgz mt-3 leading-snug">
+        <h3 className="font-bold font-['Bricolage_Grotesque'] text-lgz mt-3 leading-snug font-bricolage">
           {title}
         </h3>
 

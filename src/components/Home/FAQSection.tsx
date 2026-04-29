@@ -1,88 +1,95 @@
 import React, { useState } from "react";
+import { Plus, X } from "lucide-react";
 
 const faqs = [
   {
     question:
       "How is AyuChat different from regular WhatsApp or WhatsApp Business?",
     answer:
-      "Regular WhatsApp limits you to manual, one-on-one messaging. AyuChat is built on Meta's official WhatsApp Business API, which means you can send bulk campaigns to thousands of contacts, build automated chatbots, manage a shared team inbox, and track delivery analytics - all with official Meta compliance.",
+      "Regular WhatsApp limits you to manual, one-on-one messaging. AyuChat is built on Meta's official WhatsApp Business API...",
   },
   {
     question: "Will my messages be marked as spam?",
     answer:
-      "No, AyuChat uses official WhatsApp Business APIs ensuring compliance and reducing spam risks when used correctly.",
+      "No, AyuChat uses official WhatsApp Business APIs ensuring compliance.",
   },
   {
     question: "What are Meta's per-message charges?",
     answer:
-      "Meta charges per conversation category. These charges are separate from AyuChat pricing.",
+      "Meta charges per conversation category. These charges are separate.",
   },
   {
     question: "How many messages can I send per day?",
     answer:
-      "It depends on your WhatsApp Business API tier. Higher tiers allow more messages.",
+      "It depends on your WhatsApp Business API tier.",
   },
   {
     question: "Can I cancel my subscription at any time?",
-    answer: "Yes, you can cancel anytime with no lock-in period.",
+    answer: "Yes, you can cancel anytime.",
   },
   {
     question: "Do I need technical knowledge to set up AyuChat?",
-    answer: "No, AyuChat is no-code and beginner-friendly.",
+    answer: "No, it's beginner-friendly.",
   },
 ];
 
 const FAQSection: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [active, setActive] = useState<number | null>(0);
 
   const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setActive(active === index ? null : index);
   };
 
   return (
-    <section className="bg-[#F5F7F6] py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+    <section className="bg-[#F5F7F6] py-12 px-4">
       <div className="max-w-3xl mx-auto">
 
-        {/* Header */}
         <div className="text-center">
-          <span className="inline-block px-3 py-1 text-xs font-semibold bg-blue-100 text-[#0B6B50] rounded-full">
+          <span className="px-3 py-2 text-xs font-semibold bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] rounded-full">
             FAQ
           </span>
 
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6">
-            Frequently Asked{" "}
-            <span className="text-[#0B6B50]">Questions</span>
+          <h2 className="text-3xl font-bold mt-4 font-['Bricolage_Grotesque']">
+            Frequently Asked <span className="text-[#0B6B50]">Questions</span>
           </h2>
         </div>
 
-        {/* Custom Accordion */}
-        <div className="mt-8 sm:mt-12 space-y-3">
-
+        <div className="mt-10 space-y-3">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-100 rounded-xl px-4 sm:px-6"
+              className="bg-white border border-gray-200 rounded-xl px-5"
             >
               {/* Question */}
               <button
                 onClick={() => toggle(index)}
-                className="w-full text-left py-4 text-sm sm:text-base font-semibold flex justify-between items-center"
+                className="w-full flex justify-between items-center py-4 font-semibold text-left font-['Bricolage_Grotesque']"
               >
                 {faq.question}
-                <span className="ml-2">
-                  {openIndex === index ? "−" : "+"}
-                </span>
+
+                <div
+                  className={`w-7 h-7 flex items-center justify-center rounded-full ${
+                    active === index
+                      ? "bg-[#0B6B50] text-white"
+                      : "bg-gray-100 text-gray-600"
+                  }`}
+                >
+                  {active === index ? (
+                    <X size={16} />
+                  ) : (
+                    <Plus size={16} />
+                  )}
+                </div>
               </button>
 
               {/* Answer */}
-              {openIndex === index && (
-                <div className="text-gray-600 text-sm sm:text-base leading-relaxed pb-4">
+              {active === index && (
+                <div className="text-gray-600 pb-4 text-sm">
                   {faq.answer}
                 </div>
               )}
             </div>
           ))}
-
         </div>
 
       </div>

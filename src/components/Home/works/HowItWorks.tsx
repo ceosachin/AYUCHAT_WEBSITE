@@ -23,11 +23,11 @@ const HowItWorks: React.FC = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <span className="inline-block px-3 py-1 text-xs font-semibold bg-blue-100 text-[#0B6B50] rounded-full">
+        <span className="inline-block px-3 py-2 text-xs font-semibold bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] rounded-full">
           HOW IT WORKS
         </span>
 
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 leading-tight font-['Bricolage_Grotesque']">
           Get Your First Campaign Live <br />
           <span className="text-[#0B6B50]">
             in Under 10 Minutes

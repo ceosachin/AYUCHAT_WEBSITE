@@ -5,8 +5,8 @@ export default function Sidebar() {
     <div className="space-y-6 ">
 
       {/* 🔹 CONTACT SUPPORT */}
-      <div className="border border-gray-200 rounded-2xl p-6 bg-gray-50 ml-10 max-w-[400px]">
-        <h3 className="font-semibold mb-5">
+      <div className="border border-gray-200 rounded-2xl p-6 bg-gray-50 sm:ml-10   sm:max-w-[400px]">
+        <h3 className="font-semibold mb-5 font-['Bricolage_Grotesque']">
           Contact Support
         </h3>
 
@@ -55,7 +55,7 @@ export default function Sidebar() {
       </div>
 
       {/* 🔹 MOST VIEWED ARTICLES */}
-      <div className="border border-gray-200 rounded-2xl p-6 bg-gray-50 ml-10 max-w-[400px] ">
+      <div className="border border-gray-200 rounded-2xl p-6 bg-gray-50 sm:ml-10 max-w-[400px] font-['Bricolage_Grotesque']">
         <h3 className="font-semibold text-lg mb-5">
           Most Viewed Articles
         </h3>
@@ -115,12 +115,12 @@ export default function Sidebar() {
       </div>
 
       {/* 🔹 CTA CARD */}
-      <div className="bg-[#0B6B50] text-white rounded-2xl p-6 relative overflow-hidden ml-10 max-w-[400px]">
+      <div className="bg-[#0B6B50] text-white rounded-2xl p-6 relative overflow-hidden sm:ml-10 max-w-[400px] sm:mb-0 mb-10">
         
         {/* ICON */}
         <Zap className="text-orange-300 mb-4" />
 
-        <h3 className="text-lg font-semibold mb-2">
+        <h3 className="text-lg font-semibold mb-2 font-['Bricolage_Grotesque']">
           New to AyuChat?
         </h3>
 
@@ -128,7 +128,7 @@ export default function Sidebar() {
           Start with our complete beginner guide. You'll be sending your first campaign in under 10 minutes.
         </p>
 
-        <button className="w-full border bg-white/10 text-sm border-white/30 rounded-lg py-3 font-semibold hover:bg-white hover:text-[#0B6B50] transition">
+        <button className="font-['Bricolage_Grotesque'] w-full border bg-white/10 text-sm border-white/30 rounded-lg py-3 font-semibold hover:bg-white hover:text-[#0B6B50] transition">
           Read Getting Started Guide →
         </button>
       </div>

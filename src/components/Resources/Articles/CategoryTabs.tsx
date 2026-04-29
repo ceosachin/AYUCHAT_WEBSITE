@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const tabs = [
   "All Articles",
   "Campaigns",
@@ -10,12 +12,15 @@ const tabs = [
 ];
 
 const CategoryTabs = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-2 sm:gap-3 flex-wrap justify-center sm:justify-start">
 
       {tabs.map((tab, i) => (
         <button
           key={i}
+          onClick={() => setActiveTab(i)}
           className={`
             rounded-full 
             text-xs sm:text-sm 
@@ -23,9 +28,9 @@ const CategoryTabs = () => {
             font-semibold 
             transition
             ${
-              i === 0
-                ? "bg-[#0B6B50] hover:bg-green-700 text-white"
-                : "border border-gray-300 text-gray-600 hover:bg-gray-100"
+              activeTab === i
+                ? "bg-[#0B6B50] text-white"
+                : "border border-gray-300 text-gray-600 hover:border-[#0B6B50]"
             }
           `}
         >

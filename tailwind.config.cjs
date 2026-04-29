@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bricolage: ["Bricolage Grotesque", "sans-serif"],
+        bricolage: ['"Bricolage Grotesque"', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+  require('tailwind-scrollbar'),
+],
 };

@@ -33,7 +33,7 @@ export default function UseCases() {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="bg-blue-100 text-green-700 px-4 py-1 rounded-full text-xs font-semibold  inline-block">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 px-4 py-1 rounded-full text-xs font-semibold  inline-block">
           USE CASES
         </span>
 
@@ -54,7 +54,7 @@ export default function UseCases() {
               className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition"
             >
               {/* Icon */}
-              <div className="mb-4 text-gray-700">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-[#0B6B50]  mb-4">
                 {item.icon}
               </div>
 

@@ -224,7 +224,7 @@ const Card = ({ item }: { item: Integration }) => {
         </div>
 
         <div>
-          <h3 className="font-semibold">{item.title}</h3>
+          <h3 className="font-semibold font-['Bricolage_Grotesque']">{item.title}</h3>
           <p className="text-xs text-gray-500">{item.tag}</p>
           <p className={`text-xs ${item.statusColor}`}>
             ● {item.status}
@@ -232,7 +232,7 @@ const Card = ({ item }: { item: Integration }) => {
         </div>
       </div>
 
-      <hr className="my-4" />
+      <hr className="my-4 border-t border-gray-300" />
 
       <p className="text-sm text-gray-600">{item.description}</p>
 

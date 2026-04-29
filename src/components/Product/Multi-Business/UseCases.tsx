@@ -39,14 +39,14 @@ export default function UseCases() {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="inline-block bg-green-100 text-green-700 px-3 py-1 text-xs sm:text-sm rounded-full font-medium">
+        <span className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 px-3 py-1 text-xs sm:text-sm rounded-full font-medium">
           USE CASES
         </span>
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6 leading-tight">
           How Businesses Use This <br />
-          <span className="text-green-600">Feature to Grow</span>
+          <span className="text-[#0B6B50]">Feature to Grow</span>
         </h2>
 
         {/* Grid */}
@@ -72,7 +72,7 @@ function Card({ icon: Icon, title, desc, highlight }: CardProps) {
     <div className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 hover:shadow-md hover:border-green-500 transition duration-200">
 
       {/* Icon */}
-      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-100 text-green-700 mb-4">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-[#0B6B50]  mb-4">
         <Icon size={22} />
       </div>
 

@@ -7,7 +7,7 @@ const ArticlesGrid = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 
         {/* ROW 1 */}
-        <div className="w-full h-full rounded-xl border shadow-lg overflow-hidden bg-white">
+        <div className="w-full h-full rounded-xl  shadow-lg overflow-hidden bg-white">
           <ArticleCard
             variant="chatbot"
             title="How to Build a WhatsApp Chatbot That Actually Converts (No Code Required)"
@@ -19,7 +19,7 @@ const ArticlesGrid = () => {
           />
         </div>
 
-        <div className="w-full h-full rounded-xl border shadow-lg overflow-hidden bg-white">
+        <div className="w-full h-full rounded-xl  shadow-lg overflow-hidden bg-white">
           <ArticleCard
             variant="comparison"
             title="WhatsApp vs Email vs SMS: Which Channel Delivers the Best ROI in 2026?"
@@ -32,7 +32,7 @@ const ArticlesGrid = () => {
         </div>
 
         {/* ROW 2 */}
-        <div className="w-full h-full rounded-xl border shadow-lg overflow-hidden bg-white">
+        <div className="w-full h-full rounded-xl shadow-lg overflow-hidden bg-white">
           <ArticleCard
             variant="pricing"
             title="Meta WhatsApp API Pricing Explained: New Per-Message Model for India (2026)"
@@ -44,7 +44,7 @@ const ArticlesGrid = () => {
           />
         </div>
 
-        <div className="w-full h-full rounded-xl border shadow-lg overflow-hidden bg-white">
+        <div className="w-full h-full rounded-xl shadow-lg overflow-hidden bg-white">
           <ArticleCard
             variant="caseStudy"
             title="How Devraj Hospital Increased OPD Bookings by 40% Using WhatsApp Automation"
@@ -57,7 +57,7 @@ const ArticlesGrid = () => {
         </div>
 
         {/* ROW 3 */}
-        <div className="w-full h-full rounded-xl border shadow-lg overflow-hidden bg-white">
+        <div className="w-full h-full rounded-xl shadow-lg overflow-hidden bg-white">
           <ArticleCard
             variant="automation"
             title="7 WhatsApp Automation Workflows Every Business Should Set Up Today"
@@ -69,7 +69,7 @@ const ArticlesGrid = () => {
           />
         </div>
 
-        <div className="w-full h-full rounded-xl border shadow-lg overflow-hidden bg-white">
+        <div className="w-full h-full rounded-xl shadow-lg overflow-hidden bg-white">
           <ArticleCard
             variant="crm"
             title="How to Build and Manage Your WhatsApp Contact List the Right Way (GDPR Compliant)"

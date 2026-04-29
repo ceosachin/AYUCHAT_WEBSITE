@@ -26,12 +26,12 @@ export default function HowItWorks() {
         <div>
 
           {/* Badge */}
-          <span className="bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-medium">
+          <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium">
             HOW IT WORKS
           </span>
 
           {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold mt-4">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 font-['Bricolage_Grotesque']">
             Simple to{" "}
             <span className="text-green-800">Start Earning</span>
           </h2>
@@ -43,13 +43,13 @@ export default function HowItWorks() {
               <div key={i} className="flex gap-4 items-start">
 
                 {/* Number */}
-                <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-green-100 text-green-700 font-bold">
+                <div className="sm:w-10 w-16 h-10 sm:h-10 flex items-center justify-center rounded-xl bg-green-100 text-[#0B6B50] font-bold">
                   {i + 1}
                 </div>
 
                 {/* Content */}
                 <div>
-                  <h3 className="font-semibold text-lg">
+                  <h3 className="font-semibold text-lg font-['Bricolage_Grotesque']">
                     {step.title}
                   </h3>
                   <p className="text-gray-500 text-sm mt-1">
@@ -58,7 +58,7 @@ export default function HowItWorks() {
 
                   {/* Divider */}
                   {i !== steps.length - 1 && (
-                    <div className="border-b mt-6"></div>
+                    <div className="border-b mt-6 text-gray-300"></div>
                   )}
                 </div>
 
@@ -69,12 +69,12 @@ export default function HowItWorks() {
         </div>
 
         {/* RIGHT SIDE DASHBOARD */}
-        <div className="bg-green-900 text-white rounded-3xl p-6 shadow-xl">
+        <div className="bg-[#0B6B50] text-white rounded-3xl p-6 shadow-xl">
 
           {/* Header */}
           <div className="flex justify-between items-center mb-6">
-            <p className="font-semibold">
-              Partner Dashboard — Earnings Overview
+            <p className="font-semibold font-['Bricolage_Grotesque']">
+              Partner Dashboard - Earnings Overview
             </p>
             <span className="bg-green-500 text-black text-xs px-3 py-1 rounded-full">
               SILVER
@@ -82,7 +82,7 @@ export default function HowItWorks() {
           </div>
 
           {/* Top Card */}
-          <div className="bg-gradient-to-r from-green-500/20 to-transparent border border-green-500/40 rounded-xl p-4 flex justify-between items-center mb-6">
+          <div className="bg-gradient-to-r from-white/10 to-transparent border border-[#0B6B50]/90 rounded-xl p-4 flex justify-between items-center mb-6">
             <div>
               <p className="text-gray-300 text-sm">
                 This Month's Commission
@@ -109,10 +109,10 @@ export default function HowItWorks() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex justify-between items-center bg-green-800 p-3 rounded-lg"
+                className="flex justify-between items-center bg-white/10 p-3 rounded-lg"
               >
-                <span className="text-sm">{item.name}</span>
-                <span className="text-green-500 font-semibold">
+                <span className="text-sm font-['Bricolage_Grotesque']">{item.name}</span>
+                <span className="text-white font-semibold">
                   {item.amount}
                 </span>
               </div>
@@ -120,11 +120,11 @@ export default function HowItWorks() {
           </div>
 
           {/* Footer */}
-          <div className="mt-6 bg-green-500/10 border border-green-500/30 rounded-lg p-3 flex justify-between text-sm">
+          <div className="mt-6 bg-white/10 border border-[#0B6B50]/90 rounded-lg p-3 flex justify-between text-sm">
             <span className="text-gray-300">
               Next payout: June 1, 2026
             </span>
-            <span className="text-green-500 font-semibold">
+            <span className=" font-semibold">
               ₹28,740 pending
             </span>
           </div>

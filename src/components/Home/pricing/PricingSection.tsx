@@ -15,7 +15,7 @@ const PricingSection: React.FC = () => {
         </span>
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6 font-['Bricolage_Grotesque']">
           Simple, Transparent Pricing
         </h2>
 
@@ -82,7 +82,7 @@ const PricingSection: React.FC = () => {
                 </p>
 
                 {/* Price */}
-                <h3 className="text-3xl sm:text-4xl font-bold mt-3">
+                <h3 className="text-3xl sm:text-4xl font-bold mt-3 font-['Bricolage_Grotesque']">
                   ₹{price.toLocaleString()}
                 </h3>
 

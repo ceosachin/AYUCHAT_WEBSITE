@@ -3,11 +3,7 @@
 import NavItem from "./NavItem";
 import {
   MessageSquare,
-  Bot,
-  Share2,
-  Mail,
   ArrowRight,
-  MessageCircleMore,
   FileText,
   Image,
   HelpCircle,
@@ -50,7 +46,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 h-16">
 
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div onClick={() => {navigate("/");
+        window.scrollTo(0, 0);}} 
+        className="flex items-center gap-2 cursor-pointer">
           <div className="w-9 h-9 bg-[#0B6B50] rounded-md flex items-center justify-center text-white">
             <img src="/logo.png" alt="" />
           </div>
@@ -61,41 +59,17 @@ const Navbar = () => {
 
         {/* DESKTOP NAV (UNCHANGED) */}
         <div className="hidden lg:flex items-center gap-1 flex-1 ml-10">
-          <NavItem onClick={() => navigate("/")} label="About Us" />
+          <NavItem onClick={() => navigate("/about")} label="About Us" />
 
           <NavItem
             label="Product"
             dropdown={[
               {
-                title: "Multi-Business",
+                title: "Hub",
                 desc: "Send messages",
                 icon: <MessageSquare size={16} />,
-                onClick: () => navigate("/products/multi-business"),
-              },
-              {
-                title: "Bulk Campaigns",
-                desc: "Send messages",
-                icon: <MessageSquare size={16} />,
-                onClick: () => navigate("/products/bulk-campaigns"),
-              },
-              {
-                title: "Chatbot Builder",
-                desc: "Automation",
-                icon: <Bot size={16} />,
-                onClick: () => navigate("/products/chatbot-builder"),
-              },
-              {
-                title: "Automation Flows",
-                desc: "Flows",
-                icon: <Share2 size={16} />,
-                onClick: () => navigate("/products/automation"),
-              },
-              {
-                title: "Live Inbox",
-                desc: "Inbox",
-                icon: <Mail size={16} />,
-                onClick: () => navigate("/products/liveinbox"),
-              },
+                onClick: () => navigate("/product/hub"),
+              }
             ]}
           />
 
@@ -108,12 +82,12 @@ const Navbar = () => {
                 desc: "Templates",
                 icon: <LayoutTemplate size={16} />,
               },
-              {
-                title: "Contact CRM",
-                desc: "Manage contacts",
-                icon: <Users size={16} />,
-                onClick: () => navigate("/feature/contact-crm"),
-              },
+              // {
+              //   title: "Contact CRM",
+              //   desc: "Manage contacts",
+              //   icon: <Users size={16} />,
+              //   onClick: () => navigate("/feature/contact-crm"),
+              // },
               {
                 title: "Analytics",
                 desc: "Track ROI",
@@ -152,7 +126,7 @@ const Navbar = () => {
           />
 
           <NavItem onClick={() => navigate("/integration")} label="Integrations" />
-          <NavItem label="App" />
+          {/* <NavItem label="App" /> */}
           <NavItem onClick={() => navigate("/pricing")} label="Pricing" />
 
           <NavItem
@@ -208,9 +182,10 @@ const Navbar = () => {
         {/* CONTENT */}
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
 
-          <p onClick={() => {navigate("/");setOpen(false)}}>About Us</p>
+          <p onClick={() => {navigate("/about");setOpen(false)}}>About Us</p>
 
           <MobileDropdown title="Product" toggleMenu={toggleMenu} openMenu={openMenu}>
+  <Item label="Hub" onClick={() =>{ navigate("/product/hub");setOpen(false);} }/>
   <Item label="Multi-Business" onClick={() =>{ navigate("/products/multi-business");setOpen(false);} }/>
   <Item label="Bulk Campaigns" onClick={() =>{ navigate("/products/bulk-campaigns");setOpen(false);}} />
   <Item label="Chatbot Builder" onClick={() =>{ navigate("/products/chatbot-builder");setOpen(false);} }/>

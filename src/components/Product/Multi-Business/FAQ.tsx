@@ -37,13 +37,13 @@ export default function FAQ() {
 
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
-          <span className="inline-block px-3 py-1 text-xs sm:text-sm font-semibold bg-green-100 text-green-700 rounded-full">
+          <span className="inline-block px-4 py-2 text-xs sm:text-sm font-semibold bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 rounded-full">
             FAQ
           </span>
 
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6">
             Bulk Campaign{" "}
-            <span className="text-green-700">
+            <span className="text-[#0B6B50] ">
               Questions Answered
             </span>
           </h2>
@@ -69,7 +69,7 @@ export default function FAQ() {
                 <div
                   className={`w-7 h-7 flex items-center justify-center rounded-full ${
                     active === index
-                      ? "bg-green-700 text-white"
+                      ? "bg-[#0B6B50] text-white"
                       : "bg-gray-100 text-gray-600"
                   }`}
                 >

@@ -6,13 +6,13 @@ export default function Eligibility() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Badge */}
-        <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+        <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 px-4 py-1 rounded-full text-xs font-medium mb-4">
           ELIGIBILITY
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-          Are You <span className="text-green-600">Eligible?</span>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-['Bricolage_Grotesque']">
+          Are You <span className="text-[#0B6B50]">Eligible?</span>
         </h2>
 
         {/* Subtext */}
@@ -29,7 +29,7 @@ export default function Eligibility() {
 
             <div className="flex items-center gap-3 mb-4">
               <CheckCircle className="text-green-600 w-6 h-6" />
-              <h3 className="text-lg font-semibold text-green-700">
+              <h3 className="text-lg font-semibold text-[#0B6B50] font-['Bricolage_Grotesque']">
                 You qualify if...
               </h3>
             </div>
@@ -56,7 +56,7 @@ export default function Eligibility() {
 
             <div className="flex items-center gap-3 mb-4">
               <XCircle className="text-red-500 w-6 h-6" />
-              <h3 className="text-lg font-semibold text-red-600">
+              <h3 className="text-lg font-semibold text-red-600 font-['Bricolage_Grotesque']">
                 You don't qualify if...
               </h3>
             </div>

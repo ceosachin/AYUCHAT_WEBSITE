@@ -57,12 +57,12 @@ export default function FAQ() {
     <div className="mt-10">
       
       {/* HEADER */}
-      <h2 className="text-xl md:text-2xl font-semibold mb-6">
+      <h2 className="text-xl md:text-2xl font-semibold mb-6 font-['Bricolage_Grotesque']">
         Frequently Asked Questions
       </h2>
 
       {/* LIST */}
-      <div className="divide-y">
+      <div className="divide-y divide-gray-300">
         {faqs.map((faq, i) => {
           const isOpen = openIndex === i;
 
@@ -71,7 +71,7 @@ export default function FAQ() {
 
               {/* QUESTION */}
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex justify-between items-center cursor-pointer font-['Bricolage_Grotesque']"
                 onClick={() =>
                   setOpenIndex(isOpen ? null : i)
                 }

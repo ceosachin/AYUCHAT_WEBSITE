@@ -23,7 +23,7 @@ const StepContent: React.FC<Props> = ({
           <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#0B6B50]" />
         </div>
 
-        <h3 className="text-lg sm:text-xl font-semibold">
+        <h3 className="text-lg sm:text-xl font-semibold font-['Bricolage_Grotesque']">
           {title}
         </h3>
 
@@ -41,7 +41,7 @@ const StepContent: React.FC<Props> = ({
               <span className="w-5 h-5 sm:w-6 sm:h-6 bg-[#0B6B50] text-white flex items-center justify-center rounded-md">
                 <Check size={12} />
               </span>
-              <span className="text-xs sm:text-sm">
+              <span className="text-xs sm:text-sm ">
                 {point}
               </span>
             </div>

@@ -49,13 +49,13 @@ const PricingFAQ: React.FC = () => {
 
       {/* Badge */}
       <div className="flex justify-center mb-4">
-        <span className="bg-[#E6F4EF] text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold tracking-wide">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold tracking-wide">
           PRICING FAQ
         </span>
       </div>
 
       {/* Heading */}
-      <h2 className="text-5xl font-bold text-center text-[#1C1C1C]">
+      <h2 className="text-5xl font-bold text-center text-[#1C1C1C] font-['Bricolage_Grotesque']">
         Pricing <span className="text-[#0B6B50]">Questions Answered</span>
       </h2>
 
@@ -74,7 +74,7 @@ const PricingFAQ: React.FC = () => {
               {/* Question */}
               <div className="flex justify-between items-center">
                 <h4
-                  className={`text-lg font-medium ${
+                  className={`text-lg font-medium font-['Bricolage_Grotesque'] ${
                     isOpen ? "text-[#0B6B50]" : "text-[#1C1C1C]"
                   }`}
                 >
@@ -83,9 +83,9 @@ const PricingFAQ: React.FC = () => {
 
                 {/* Icon */}
                 <div
-                  className={`w-8 h-8 flex items-center justify-center rounded-full border transition ${
+                  className={`w-8 h-8 flex items-center justify-center rounded-full font-bold  border transition ${
                     isOpen
-                      ? "bg-[#0B6B50] text-white border-[#0B6B50]"
+                      ? "bg-[#0B6B50] text-white border-[#0B6B50] "
                       : "text-[#0B6B50] border-gray-300"
                   }`}
                 >

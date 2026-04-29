@@ -64,14 +64,14 @@ export default function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
 
         {/* Top Label */}
-        <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+        <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B05] px-4 py-1 rounded-full text-xs font-medium mb-4">
           WHAT YOU GET
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight font-['Bricolage_Grotesque']">
           Everything in Our{" "}
-          <span className="text-green-600">Growth Plan — Free</span>
+          <span className="text-[#0B6B05]">Growth Plan - Free</span>
         </h2>
 
         {/* Subtext */}
@@ -93,13 +93,13 @@ export default function FeaturesSection() {
               >
                 {/* Icon */}
                 <div
-                  className={`w-12 h-12 flex items-center justify-center rounded-xl ${item.iconBg}`}
+                  className='w-12 h-12 flex items-center justify-center rounded-xl bg-[#E6F4EF] text-[#0B6B50]'
                 >
                   <Icon className="w-5 h-5 text-gray-700" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold text-gray-900 mt-4">
+                <h3 className="text-lg font-semibold text-gray-900 mt-4 font-['Bricolage_Grotesque']">
                   {item.title}
                 </h3>
 

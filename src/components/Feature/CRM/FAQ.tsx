@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Plus, X } from "lucide-react";
 
 export default function FAQ() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -27,23 +27,23 @@ export default function FAQ() {
     },
   ];
 
-  const toggle = (index) => {
-    setActive(active === index ? -1 : index);
-  };
+  const toggle = (index: number) => {
+  setActive(active === index ? null : index);
+};
 
   return (
-    <section className="bg-[#f5f7f6] py-20 px-6">
+    <section className="bg-[#f5f7f6] pt-1 pb-24 px-6">
       <div className="max-w-4xl mx-auto">
 
         {/* Top */}
         <div className="text-center mb-12">
-          <span className="bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-medium">
+          <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50]  px-4 py-1 rounded-full text-xs font-medium">
             FAQ
           </span>
 
-          <h2 className="text-4xl md:text-5xl font-bold mt-6">
+          <h2 className="text-4xl md:text-5xl font-bold mt-6 leading-tight font-['Bricolage_Grotesque']">
             Bulk Campaign{" "}
-            <span className="text-green-700">
+            <span className="text-[#0B6B50]">
               Questions Answered
             </span>
           </h2>
@@ -66,9 +66,15 @@ export default function FAQ() {
                   {item.q}
                 </h3>
 
-                <div className="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-700">
-                  {active === index ? <X size={16} /> : <Plus size={16} />}
-                </div>
+                <div
+  className={`w-7 h-7 flex items-center justify-center rounded-full ${
+    active === index
+      ? "bg-[#0B6B50] text-white"
+      : "bg-gray-100 text-gray-600"
+  }`}
+>
+  {active === index ? <X size={16} /> : <Plus size={16} />}
+</div>
               </div>
 
               {/* Answer */}

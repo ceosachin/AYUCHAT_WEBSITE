@@ -37,13 +37,13 @@ export default function FAQ() {
 
         {/* Top */}
         <div className="text-center mb-12">
-          <span className="bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-medium">
+          <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium">
             FAQ
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-6">
             Bulk Campaign{" "}
-            <span className="text-green-700">
+            <span className="text-[#0B6B50]">
               Questions Answered
             </span>
           </h2>
@@ -66,11 +66,11 @@ export default function FAQ() {
                   {item.q}
                 </h3>
 
-                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-200 text-green-700">
+                <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#0B6B50] text-white">
   {active === index ? (
-    <X className="w-3 h-3 sm:w-4 sm:h-4" />
+    <X className="w-3 h-3 sm:w-4 sm:h-4" strokeWidth={3.5}/>
   ) : (
-    <Plus className="w-3 h-3 sm:w-4 sm:h-4" />
+    <Plus className="w-3 h-3 sm:w-4 sm:h-4" strokeWidth={3.5}/>
   )}
 </div>
               </div>

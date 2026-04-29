@@ -12,7 +12,7 @@ const IntegrationsSection: React.FC = () => {
         </span>
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6 font-['Bricolage_Grotesque']">
           Works With the Tools{" "}
           <span className="text-[#0B6B50]">
             You Already Use

@@ -16,14 +16,14 @@ export default function ROICalculator() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-[10px] sm:text-xs font-medium">
+        <span className="bg-[#E6F4EF] text-green-700 px-3 py-2 rounded-full text-[10px] sm:text-xs font-medium">
           ROI CALCULATOR
         </span>
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 sm:mt-6">
           Calculate Your{" "}
-          <span className="text-green-700">Campaign Returns</span>
+          <span className="text-[#0B6B50]">Campaign Returns</span>
         </h2>
 
         {/* Main Card */}

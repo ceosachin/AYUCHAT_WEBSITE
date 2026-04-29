@@ -27,13 +27,13 @@ export function ApplySteps() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Badge */}
-        <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+        <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium mb-4">
           APPLICATION PROCESS
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-          How to <span className="text-green-600">Apply</span>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-['Bricolage_Grotesque']">
+          How to <span className="text-[#0B6B50]">Apply</span>
         </h2>
 
         {/* Steps */}
@@ -44,7 +44,7 @@ export function ApplySteps() {
               key={i}
               className="p-6 text-center border-r last:border-none border-[#E6F0EC]"
             >
-              <div className="w-10 h-10 mx-auto bg-green-600 text-white rounded-full flex items-center justify-center font-semibold">
+              <div className="w-10 h-10 mx-auto bg-[#0B6B50] text-white rounded-full flex items-center justify-center font-semibold">
                 {step.id}
               </div>
 

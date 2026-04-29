@@ -6,12 +6,12 @@ const WhyWhatsapp: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         
         {/* Tag */}
-        <span className="inline-block px-3 py-1 text-[10px] sm:text-xs font-semibold bg-blue-100 text-[#0B6B50] rounded-full mb-4 sm:mb-6">
+        <span className="inline-block px-3 py-2 border border-[#0B6B50]/20 text-[10px] sm:text-xs font-semibold bg-[#E6F4EF] text-[#0B6B50] rounded-full mb-4 sm:mb-6">
           WHY WHATSAPP?
         </span>
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight font-['Bricolage_Grotesque']">
           The Channel Your{" "}
           <span className="text-[#0B6B50]">Customers Already Use</span>
         </h2>
@@ -19,7 +19,7 @@ const WhyWhatsapp: React.FC = () => {
         {/* Description */}
         <p className="text-gray-600 mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base">
           Email gets ignored. SMS feels outdated. WhatsApp is where real
-          conversations happen — and where your business needs to be.
+          conversations happen - and where your business needs to be.
         </p>
 
         {/* Cards */}
@@ -65,7 +65,7 @@ type StatCardProps = {
 
 const StatCard: React.FC<StatCardProps> = ({ value, title, desc }) => (
   <div className="text-center hover:shadow-md transition bg-white border border-gray-100 rounded-xl py-6 sm:py-8">
-    <h3 className="text-2xl sm:text-3xl font-bold text-[#0B6B50]">
+    <h3 className="text-2xl sm:text-3xl font-bold text-[#0B6B50] font-['Bricolage_Grotesque']">
       {value}
     </h3>
     <p className="font-medium mt-2 text-sm sm:text-base">

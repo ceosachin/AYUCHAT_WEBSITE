@@ -1,34 +1,28 @@
-import React from "react";
+import { Check } from "lucide-react";
 
 export default function Hero() {
   return (
     <div className="bg-[#031B16] text-white min-h-screen px-4 sm:px-6 py-8 sm:py-10">
 
       {/* Breadcrumb + Badge */}
-      <div className="max-w-6xl mx-auto text-xs sm:text-sm text-gray-400 flex flex-wrap items-center gap-2">
-        <span className="text-green-400">Home</span>
-        <span>›</span>
-        <span>More</span>
-        <span>›</span>
-        <span>Startup Program</span>
-
-        <span className="sm:ml-4 bg-[#0E2E26] text-green-400 px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs border border-green-800">
-          ⭐ Limited spots available — 50 startups per cohort
-        </span>
-      </div>
+     <div className="max-w-6xl mx-auto text-xs sm:text-sm text-gray-400 flex justify-center">
+  <span className="bg-[#0E2E26] text-green-400 px-2 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs border border-green-800">
+    ⭐ Limited spots available — 50 startups per cohort
+  </span>
+</div>
 
       {/* HERO CONTENT */}
       <div className="max-w-4xl mx-auto text-center mt-8 sm:mt-10">
 
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight font-['Bricolage_Grotesque']">
           Built Your Startup?
         </h1>
 
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-green-400 mt-2">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-green-400 mt-2 font-['Bricolage_Grotesque']">
           Grow it on WhatsApp.
         </h1>
 
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-2">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-2 font-['Bricolage_Grotesque']">
           For Free.
         </h1>
 
@@ -59,7 +53,7 @@ export default function Hero() {
             "No credit card ever",
           ].map((item, i) => (
             <span key={i} className="flex items-center gap-2">
-              <span className="text-green-400">✔</span> {item}
+              <span className="text-green-400"><Check size={18} strokeWidth={3.5}/></span> {item}
             </span>
           ))}
         </div>
@@ -150,26 +144,39 @@ export default function Hero() {
 
             {/* PERKS */}
             <div className="bg-[#0F3A30] rounded-xl p-4 sm:p-6">
-              <p className="text-green-400 text-xs sm:text-sm mb-3 sm:mb-4">
-                STARTUP PERKS
-              </p>
+  
+  {/* Heading */}
+  <p className="text-green-400 text-xs sm:text-sm mb-3 sm:mb-4 font-medium tracking-wide">
+    STARTUP PERKS
+  </p>
 
-              <ul className="space-y-2 text-gray-300 text-xs sm:text-sm">
-                <li>✔ Chatbot builder</li>
-                <li>✔ Automation flows</li>
-                <li>✔ 10,000 contacts</li>
-                <li>✔ API access</li>
-              </ul>
-            </div>
+  {/* List */}
+  <ul className="space-y-3 text-gray-300 text-xs sm:text-sm">
+    
+    <li className="flex items-start gap-2 sm:gap-3">
+      <Check className="text-white mt-0.5 flex-shrink-0" strokeWidth={3} size={16} />
+      <span>Chatbot builder</span>
+    </li>
+
+    <li className="flex items-start gap-2 sm:gap-3">
+      <Check className="text-white mt-0.5 flex-shrink-0" strokeWidth={3} size={16} />
+      <span>Automation flows</span>
+    </li>
+
+    <li className="flex items-start gap-2 sm:gap-3">
+      <Check className="text-white mt-0.5 flex-shrink-0" strokeWidth={3} size={16} />
+      <span>10,000 contacts</span>
+    </li>
+
+    <li className="flex items-start gap-2 sm:gap-3">
+      <Check className="text-white mt-0.5 flex-shrink-0" strokeWidth={3} size={16} />
+      <span>API access</span>
+    </li>
+
+  </ul>
+</div>
 
           </div>
-        </div>
-      </div>
-
-      {/* FLOAT BUTTON */}
-      <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6">
-        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-green-500 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.4)] cursor-pointer hover:scale-110 hover:bg-green-600 transition">
-          💬
         </div>
       </div>
     </div>

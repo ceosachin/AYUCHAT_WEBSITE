@@ -29,11 +29,11 @@ export default function VideoSection() {
       
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl md:text-2xl font-semibold">
+        <h2 className="text-xl md:text-2xl font-semibold font-['Bricolage_Grotesque']">
           Video Tutorials
         </h2>
 
-        <button className="flex items-center gap-1 text-[#0B6B50] text-sm font-medium hover:gap-2 transition-all">
+        <button className="font-['Bricolage_Grotesque'] flex items-center gap-1 text-[#0B6B50] text-sm font-medium hover:gap-2 transition-all">
           View all videos <ArrowRight size={16} />
         </button>
       </div>
@@ -43,7 +43,7 @@ export default function VideoSection() {
         {videos.map((video, i) => (
           <div
             key={i}
-            className="rounded-2xl overflow-hidden border cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="rounded-2xl overflow-hidden border border-gray-200 cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           >
             
             {/* TOP GRADIENT */}
@@ -58,7 +58,7 @@ export default function VideoSection() {
 
             {/* CONTENT */}
             <div className="p-4 bg-gray-50">
-              <p className="font-medium text-gray-900 text-sm">
+              <p className="font-medium text-gray-900 text-sm font-['Bricolage_Grotesque']">
                 {video.title}
               </p>
               <p className="text-xs text-gray-500 mt-1 ">

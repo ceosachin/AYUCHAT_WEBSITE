@@ -38,7 +38,7 @@ const StepItem: React.FC<Props> = ({
         {/* Content */}
         <div>
           <h4
-            className={`text-sm sm:text-base font-medium ${
+            className={`text-sm sm:text-base font-medium font-['Bricolage_Grotesque'] ${
               active ? "text-[#0B6B50]" : ""
             }`}
           >

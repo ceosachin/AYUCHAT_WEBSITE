@@ -4,14 +4,14 @@ export default function ApplicationForm() {
       <div className="max-w-5xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="bg-green-100 text-green-600 px-4 py-1 rounded-full text-sm font-medium">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium">
           APPLY NOW
         </span>
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold mt-4">
           Join the{" "}
-          <span className="text-green-800">Partner Program</span>
+          <span className="text-green-800 font-['Bricolage_Grotesque']">Partner Program</span>
         </h2>
 
         <p className="text-gray-500 mt-4">
@@ -25,7 +25,7 @@ export default function ApplicationForm() {
           <div className="flex items-center gap-3 mb-6">
             <div className="text-2xl">💰</div>
             <div>
-              <h3 className="text-2xl font-bold">Partner Application</h3>
+              <h3 className="text-2xl font-bold font-['Bricolage_Grotesque']">Partner Application</h3>
               <p className="text-gray-500 text-sm">
                 Takes 2 minutes. No upfront cost.
               </p>

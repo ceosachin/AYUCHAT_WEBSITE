@@ -30,12 +30,12 @@ export default function ColorPalette() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
 
         {/* TAG */}
-        <span className="text-[10px] sm:text-xs font-bold bg-blue-100 text-[#0B6B50] px-3 py-1 rounded-full">
+        <span className="text-[10px] sm:text-xs font-bold bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 py-1 rounded-full">
           BRAND COLORS
         </span>
 
         {/* TITLE */}
-        <h2 className="text-2xl sm:text-3xl font-bold mt-4">
+        <h2 className="text-2xl sm:text-3xl font-bold mt-4 font-['Bricolage_Grotesque']">
           Color Palette
         </h2>
 
@@ -63,7 +63,7 @@ export default function ColorPalette() {
 
               {/* CONTENT */}
               <div className="p-3 sm:p-4">
-                <p className="font-semibold text-gray-900 text-sm sm:text-base">
+                <p className="font-semibold text-gray-900 text-sm sm:text-base font-['Bricolage_Grotesque']">
                   {color.name}
                 </p>
 

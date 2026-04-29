@@ -2,17 +2,17 @@ import { Search } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="bg-[#157a63] text-white py-14 sm:py-20 px-4 sm:px-6 text-center">
+    <div className="bg-gradient-to-br from-[#031d17] via-[#062f26] to-[#02110d] text-white py-14 sm:py-20 px-4 sm:px-6 text-center">
 
       {/* TAG */}
       <div className="mb-4 flex justify-center">
-        <span className="bg-white/20 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
+        <span className="bg-white/20  border border-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs sm:text-xs font-semibold">
           DOCUMENTATION & SUPPORT
         </span>
       </div>
 
       {/* HEADING */}
-      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 leading-tight">
+      <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 leading-tight text-green-400 font-['Bricolage_Grotesque']">
         How Can We Help You?
       </h1>
 

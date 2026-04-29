@@ -3,7 +3,7 @@ import React from "react";
 
 const FeatureHighlight: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 border-b hover:bg-[#F8FAF9] transition">
+    <div className="grid grid-cols-1 lg:grid-cols-2 border-b border-gray-100 hover:bg-[#F8FAF9] transition">
 
       {/* LEFT */}
       <div className="p-6 sm:p-8 lg:p-10">
@@ -11,7 +11,7 @@ const FeatureHighlight: React.FC = () => {
           <PhoneIcon size={20} />
         </div>
 
-        <h3 className="text-xl sm:text-2xl font-semibold mb-3">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-3 font-['Bricolage_Grotesque']">
           Bulk WhatsApp Campaigns
         </h3>
 

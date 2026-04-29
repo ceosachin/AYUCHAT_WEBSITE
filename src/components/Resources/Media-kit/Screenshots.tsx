@@ -4,12 +4,12 @@ export default function ProductScreenshots() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
 
         {/* TAG */}
-        <span className="text-[10px] sm:text-xs font-semibold bg-green-100 text-[#0B6B50] px-3 py-1 rounded-full">
+        <span className="text-[10px] sm:text-xs font-semibold bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 py-1 rounded-full">
           PRODUCT SCREENSHOTS
         </span>
 
         {/* TITLE */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 font-['Bricolage_Grotesque']">
           High-Res Product Images
         </h2>
 
@@ -27,7 +27,7 @@ export default function ProductScreenshots() {
               title: "Dashboard Overview",
               size: "PNG · 2560×1440px · 2MB",
               content: (
-                <div className="bg-[#F4F8F6] rounded-xl p-3 sm:p-4 flex gap-3 sm:gap-4">
+                <div className="bg-[#F4F8F6] rounded-xl p-3 sm:px-4 sm:py-10 flex gap-3 sm:gap-4">
                   <div className="w-12 sm:w-16 flex flex-col gap-2">
                     <div className="h-3 bg-[#0B6B50] rounded"></div>
                     <div className="h-2 bg-gray-300 rounded"></div>
@@ -115,7 +115,7 @@ export default function ProductScreenshots() {
               title: "Live Inbox",
               size: "PNG · 2560×1440px · 1.6MB",
               content: (
-                <div className="bg-[#F4F8F6] rounded-xl p-3 sm:p-4 flex gap-3 sm:gap-4">
+                <div className="bg-[#F4F8F6] rounded-xl p-3 sm:p-4 sm:py-13 flex gap-3 sm:gap-4">
                   <div className="w-20 sm:w-32 space-y-2 sm:space-y-3">
                     <div className="h-3 sm:h-4 bg-white rounded"></div>
                     {[1, 2, 3].map((i) => (
@@ -137,9 +137,9 @@ export default function ProductScreenshots() {
           ].map((item, index) => (
             <div
               key={index}
-              className="border border-[#E2ECE8] rounded-2xl hover:shadow-lg transition bg-white"
+              className="border border-[#E2ECE8] rounded-2xl hover:shadow-lg transition bg-white h-full flex flex-col"
             >
-              <div className="p-3 sm:p-4">
+              <div className="p-3 sm:p-4 flex flex-col h-full">
                 {item.content}
 
                 <p className="mt-4 font-semibold text-sm sm:text-base">

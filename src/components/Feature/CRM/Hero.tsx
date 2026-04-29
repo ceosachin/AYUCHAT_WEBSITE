@@ -1,9 +1,9 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#031A16] via-[#062821] to-[#031A16] text-white px-6 py-20">
+    <div className="min-h-screen bg-gradient-to-br from-[#031A16] via-[#062821] to-[#031A16] text-white px-6  flex items-center pt-8 pb-24">
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
@@ -11,45 +11,55 @@ const Hero: React.FC = () => {
         <div>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#0B6B50]/20 border border-[#0B6B50]/40 text-[#1FC28B] px-4 py-1 rounded-full text-sm mb-6">
-            ✔ Pipeline-Based Contact CRM
-          </div>
+          <div className="inline-flex items-center gap-2 bg-green-400/10 border border-[#0B6B50]/40 text-green-400 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm mb-6">
+  
+  {/* Icon */}
+  <div className="flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 bg-green-400 rounded-full">
+    <Check size={14} strokeWidth={3} className="text-black" />
+  </div>
+
+  Pipeline-Based Contact CRM
+</div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight font-['Bricolage_Grotesque']">
             Your WhatsApp
             <br />
             Contacts. Managed
             <br />
-            <span className="text-[#1FC28B]">Like a CRM.</span>
+            <span className="text-green-400">Like a CRM.</span>
           </h1>
 
           {/* Description */}
           <p className="text-gray-300 mt-6 max-w-xl leading-relaxed">
             AyuChat's built-in contact CRM tracks every lead from first
-            touch to closed deal — with pipeline stages, custom fields,
+            touch to closed deal - with pipeline stages, custom fields,
             audience segmentation, and complete conversation history, all
             connected to your WhatsApp campaigns.
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-4 mt-8">
+         <div className="flex flex-col sm:flex-row gap-4 mt-8">
 
-            <button className="bg-[#1FC28B] text-black font-semibold px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-[#17a877] transition">
-              Start Free — 14 Days <ArrowRight size={16} />
-            </button>
+  <button className="w-full sm:w-auto bg-green-400 text-black font-semibold px-6 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-[#17a877] transition">
+    Start Free — 14 Days 
+    <ArrowRight size={16} />
+  </button>
 
-            <button className="border border-gray-500 px-6 py-3 rounded-lg hover:bg-white/10 transition">
-              See Live Demo →
-            </button>
+  <button className="w-full sm:w-auto border border-gray-500 text-white px-6 py-3 rounded-lg hover:bg-white/10 transition flex items-center justify-center">
+    See Live Demo →
+  </button>
 
-          </div>
+</div>
 
           {/* Trust Line */}
           <div className="flex flex-wrap gap-6 mt-8 text-sm text-gray-400">
-            <span>✔ Official Meta Partner</span>
-            <span>✔ 1,000+ businesses trust us</span>
-            <span>✔ No credit card required</span>
+            <div className="flex items-center gap-2 ">
+              <Check size={16} className="text-green-400" strokeWidth={4.5}/> Official Meta Partner</div>
+            <div className="flex items-center gap-2 ">
+              <Check size={16} className="text-green-400" strokeWidth={4.5}/>1,000+ businesses trust us</div>
+           <div className="flex items-center gap-2 ">
+              <Check size={16} className="text-green-400" strokeWidth={4.5}/>No credit card required</div>
           </div>
 
         </div>
@@ -66,38 +76,38 @@ const Hero: React.FC = () => {
             {/* Stat Row */}
             <div className="bg-white/5 rounded-lg px-4 py-3 flex justify-between mb-3">
               <span className="text-gray-400">Active Today</span>
-              <span className="text-[#1FC28B] font-semibold">Unlimited</span>
+              <span className="text-green-400 font-semibold">Unlimited</span>
             </div>
 
             <div className="bg-white/5 rounded-lg px-4 py-3 flex justify-between mb-4">
               <span className="text-gray-400">Performance</span>
-              <span className="text-[#1FC28B] font-semibold">Pipeline</span>
+              <span className="text-green-400 font-semibold">Pipeline</span>
             </div>
 
             {/* Progress */}
             <div className="mb-4">
               <div className="flex justify-between text-sm text-gray-400 mb-1">
                 <span>Success Rate</span>
-                <span className="text-[#1FC28B]">96.2%</span>
+                <span className="text-green-400">96.2%</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-2 bg-[#1FC28B] rounded-full w-[96%]" />
+                <div className="h-2 bg-green-400 rounded-full w-[96%]" />
               </div>
             </div>
 
             <div className="mb-6">
               <div className="flex justify-between text-sm text-gray-400 mb-1">
                 <span>Satisfaction</span>
-                <span className="text-[#1FC28B]">4.9/5</span>
+                <span className="text-green-400">4.9/5</span>
               </div>
               <div className="h-2 bg-gray-700 rounded-full">
-                <div className="h-2 bg-[#1FC28B] rounded-full w-[90%]" />
+                <div className="h-2 bg-green-400 rounded-full w-[90%]" />
               </div>
             </div>
 
             {/* Bottom Highlight */}
             <div className="border border-[#1FC28B]/40 bg-[#1FC28B]/10 rounded-lg p-4">
-              <p className="text-xs text-[#1FC28B] font-semibold mb-1">
+              <p className="text-xs text-green-400 font-semibold mb-1">
                 FEATURE ACTIVE
               </p>
               <p className="text-sm text-gray-300">

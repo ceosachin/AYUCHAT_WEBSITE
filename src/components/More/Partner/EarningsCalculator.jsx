@@ -15,9 +15,9 @@ export default function EarningsCalculator() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold">
+        <h2 className="text-4xl md:text-5xl font-bold font-['Bricolage_Grotesque']">
           Calculate Your{" "}
-          <span className="text-green-800">Monthly Commission</span>
+          <span className="text-[#0B6B50]">Monthly Commission</span>
         </h2>
 
         <p className="text-gray-500 mt-4">
@@ -28,11 +28,11 @@ export default function EarningsCalculator() {
         <div className="mt-12 bg-white rounded-2xl shadow-xl overflow-hidden">
 
           {/* Header */}
-          <div className="bg-green-900 text-white px-6 py-4 flex justify-between items-center">
+          <div className="bg-[#0B6B50] text-white px-6 py-4 flex justify-between items-center">
             <h3 className="font-semibold">
               AyuChat Partner Earnings Estimator
             </h3>
-            <span className="bg-green-600 text-white text-xs px-3 py-1 rounded-full">
+            <span className="bg-green-400 text-black text-xs sm:px-3 px-1 py-1 rounded-full">
               LIVE ESTIMATE
             </span>
           </div>
@@ -45,7 +45,7 @@ export default function EarningsCalculator() {
 
               {/* Clients */}
               <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wide">
+                <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">
                   Clients per month
                 </p>
                 <p className="text-xl font-bold text-green-700">

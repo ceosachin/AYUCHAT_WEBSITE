@@ -5,19 +5,19 @@ export default function UseCases() {
     {
       icon: <CalendarCheck size={28} />,
       title: "OPD Appointment Booking",
-      desc: "Patients type 'Book' → select doctor → pick date → confirm booking — fully automated, no staff needed.",
+      desc: "Patients type 'Book' → select doctor → pick date → confirm booking - fully automated, no staff needed.",
       highlight: "Devraj Hospital: 200 bookings/day via bot",
     },
     {
       icon: <ShoppingCart size={28} />,
       title: "Product Inquiry & Catalogue",
-      desc: "Customers browse your catalogue, ask about pricing and availability, and place orders — all inside WhatsApp.",
+      desc: "Customers browse your catalogue, ask about pricing and availability, and place orders - all inside WhatsApp.",
       highlight: "↑ 40% online orders via chatbot",
     },
     {
       icon: <Home size={28} />,
       title: "Lead Qualification",
-      desc: "New leads answer qualification questions — budget, timeline, location — and are automatically scored and assigned.",
+      desc: "New leads answer qualification questions - budget, timeline, location - and are automatically scored and assigned.",
       highlight: "↑ 3x qualified leads per week",
     },
     {
@@ -33,7 +33,7 @@ export default function UseCases() {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="bg-blue-100 text-green-700 px-4 py-1 rounded-full text-xs font-semibold  inline-block">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold  inline-block">
           USE CASES
         </span>
 
@@ -54,7 +54,7 @@ export default function UseCases() {
               className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-md transition"
             >
               {/* Icon */}
-              <div className="mb-4 text-gray-700">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-50 text-[#0B6B50]  mb-4">
                 {item.icon}
               </div>
 
@@ -69,7 +69,7 @@ export default function UseCases() {
               </p>
 
               {/* Highlight */}
-              <p className="text-green-700 text-sm mt-4 font-medium">
+              <p className="text-[#0B6B50] text-sm mt-4 font-medium">
                 {item.highlight}
               </p>
             </div>

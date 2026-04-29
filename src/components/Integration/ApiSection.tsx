@@ -82,11 +82,11 @@ fetch("https://api.ayuchat.in/v1/contacts", {
 
         {/* LEFT */}
         <div>
-          <span className="bg-[#E6F4EF] text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold">
+          <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold">
             REST API & WEBHOOKS
           </span>
 
-          <h2 className="text-5xl font-bold mt-4 text-[#1C1C1C] leading-tight">
+          <h2 className="text-5xl font-bold mt-4 text-[#1C1C1C] leading-tight font-['Bricolage_Grotesque']">
             Build Any Custom <br />
             <span className="text-[#0B6B50]">Integration You Need</span>
           </h2>

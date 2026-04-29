@@ -1,6 +1,8 @@
+import { Check } from "lucide-react";
+
 export default function Hero() {
   return (
-    <section className="relative bg-[#031c1a] text-white py-24 px-6 overflow-hidden">
+    <section className="relative bg-[#031c1a] text-white pt-8 pb-24 px-6 overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-to-r from-green-900/40 via-transparent to-transparent"></div>
@@ -10,10 +12,16 @@ export default function Hero() {
         {/* LEFT SIDE */}
         <div>
 
-          {/* Badge */}
-          <span className="inline-flex items-center gap-2 bg-green-900/40 text-green-400 px-4 py-1 rounded-full text-sm mb-6">
-            ✅ Real-Time Multi-Agent Inbox
+          <div className="flex items-center gap-3 text-sm text-gray-400 mb-6  sm:mt-0">
+  
+  <span className="flex items-center gap-2 border border-emerald-900/90 bg-green-900/40 text-green-400 px-3 py-2 rounded-full text-xs font-bold">
+    
+    <div className="flex items-center justify-center w-6 h-6 bg-green-400 rounded-full">
+      <Check size={16} strokeWidth={4.5} className="text-black" />
+    </div>
+            Real-Time Multi-Agent Inbox
           </span>
+          </div>
 
           {/* Heading */}
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
@@ -42,9 +50,9 @@ export default function Hero() {
 
           {/* Footer */}
           <div className="flex gap-6 mt-6 text-gray-400 text-sm flex-wrap">
-            <span>✔ Official Meta Partner</span>
-            <span>✔ 1,000+ businesses trust us</span>
-            <span>✔ No credit card required</span>
+            <div className="flex items-center gap-2"><Check size={16} className="text-green-400" strokeWidth={4.5} /> Official Meta Partner</div>
+            <div className="flex items-center gap-2"><Check size={16} className="text-green-400" strokeWidth={4.5} /> 1,000+ businesses trust us</div>
+            <div className="flex items-center gap-2"><Check size={16} className="text-green-400" strokeWidth={4.5} /> No credit card required</div>
           </div>
 
         </div>

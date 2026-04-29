@@ -45,14 +45,14 @@ export default function CoreFeatures() {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-medium mb-6">
+         <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium mb-6">
           CORE FEATURES
         </div>
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
           Every Capability You Need <br />
-          <span className="text-green-700">
+          <span className="text-[#0B6B50]">
             in One Place
           </span>
         </h2>
@@ -67,10 +67,10 @@ export default function CoreFeatures() {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 hover:border-green-500 rounded-2xl p-6 hover:shadow-md transition"
+              className="bg-white border border-gray-200  rounded-2xl p-6 hover:shadow-md transition"
             >
               {/* Icon */}
-              <div className={`w-12 h-12 flex items-center justify-center rounded-xl mb-4 ${item.bg}`}>
+              <div className='bg-[#E6F4EF] text-[#0B6B50] w-12 h-12 flex items-center justify-center rounded-xl mb-4'>
                 {item.icon}
               </div>
 

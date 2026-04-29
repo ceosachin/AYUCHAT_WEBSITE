@@ -1,11 +1,11 @@
 export function StatsStrip() {
   return (
-    <div className="w-full border-t border-gray-300">
+    <div className="w-full border-t border-b border-gray-300">
 
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 font-['Bricolage_Grotesque']">
 
         {/* 1 */}
-        <div className="py-6 sm:py-10 text-center border-b border-r md:border-b-0 md:border-r border-gray-300">
+        <div className="py-6 sm:py-10 text-center border-b md:border-b-0 md:border-r border-gray-300">
           <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#166b4e]">
             96.2%
           </p>

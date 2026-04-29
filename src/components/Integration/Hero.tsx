@@ -1,15 +1,16 @@
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 /* ================= MAIN ================= */
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-[#F5F7F6] py-14 sm:py-20 px-4 sm:px-6 text-center">
+    <div className="bg-[#F5F7F6] py-14 sm:py-28 px-4 sm:px-6 text-center">
 
       <div className="max-w-4xl mx-auto">
 
         {/* Heading */}
-        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
+        <h1 className="font-['Bricolage_Grotesque'] text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight">
           AyuChat Works With
           <br />
           <span className="text-[#0B6B50]">Every Tool You Use</span>
@@ -23,17 +24,20 @@ const Hero: React.FC = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex justify-center gap-3 sm:gap-4 mt-6 sm:mt-8 flex-wrap">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
 
-          <button className="bg-[#0B6B50] text-white px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-semibold hover:bg-[#09543d] transition">
-            Explore All Integrations
-          </button>
+  {/* Primary Button */}
+  <button className="w-full sm:w-auto bg-[#0B6B50] text-white px-6 sm:px-7 py-3 rounded-xl text-sm sm:text-base font-semibold hover:bg-[#09543d] transition flex items-center justify-center">
+    Explore All Integrations
+  </button>
 
-          <button className="border border-gray-300 text-gray-800 px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl text-sm sm:text-base font-medium hover:bg-gray-100 transition">
-            API Documentation →
-          </button>
+  {/* Secondary Button */}
+  <button className="w-full sm:w-auto border border-gray-300 text-gray-800 px-6 sm:px-7 py-3 rounded-xl text-sm sm:text-base font-medium hover:bg-gray-100 transition flex items-center justify-center gap-2">
+    API Documentation
+    <ArrowRight size={16} />
+  </button>
 
-        </div>
+</div>
 
         {/* Icons Row */}
         <div className="flex justify-center items-center gap-2 sm:gap-4 mt-10 sm:mt-16 flex-wrap">

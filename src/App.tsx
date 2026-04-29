@@ -21,6 +21,8 @@ import Feature from "./pages/Feature/Feature";
 import Integration from "./pages/Integration/Integration";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
+import Hub from "./pages/Hub/Hub";
+import About from "./pages/About/About";
 
 
 
@@ -34,6 +36,7 @@ function App() {
             
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/resources/articles" element={<Articles />} />
               <Route path="/resources/help" element={<Help />} />
               <Route path="/resources/media-kit" element={<MediaKitPage />} />
@@ -47,6 +50,7 @@ function App() {
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/feature/contact-crm" element={<Feature />} />
               <Route path="/integration" element={<Integration />} />
+              <Route path="/product/hub" element={<Hub />} />
             </Routes>
 
           </ScrollRestoration>

@@ -34,13 +34,13 @@ export default function CommonFAQ() {
 
         {/* Top */}
         <div className="text-center mb-12">
-          <span className="bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-semibold inline-block">
+          <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-2 rounded-full text-xs font-semibold inline-block">
             FAQ
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-6">
             Common{" "}
-            <span className="text-green-700">
+            <span className="text-[#0B6B50]">
               Questions Answered
             </span>
           </h2>
@@ -66,7 +66,7 @@ export default function CommonFAQ() {
                 <div
                   className={`w-7 h-7 flex items-center justify-center rounded-full transition ${
                     active === index
-                      ? "bg-green-700 text-white"
+                      ? "bg-[#0B6B50] text-white"
                       : "bg-gray-100 text-gray-600"
                   }`}
                 >

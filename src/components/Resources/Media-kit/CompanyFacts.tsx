@@ -23,12 +23,12 @@ export function CompanyFacts() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-12 sm:mt-16 lg:mt-20">
 
       {/* Tag */}
-      <p className="text-[10px] sm:text-xs bg-blue-100 text-[#0B6B50] px-3 sm:px-4 py-1 rounded-full inline-block mb-4 font-semibold tracking-wide">
+      <p className="text-[10px] sm:text-xs bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 sm:px-4 py-1 rounded-full inline-block mb-4 font-semibold tracking-wide">
         COMPANY FACTS
       </p>
 
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-['Bricolage_Grotesque']">
         AyuChat by the Numbers
       </h2>
 
@@ -44,7 +44,7 @@ export function CompanyFacts() {
             key={i}
             className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 text-center"
           >
-            <p className="text-2xl sm:text-3xl font-bold text-[#0B6B50]">
+            <p className="text-2xl sm:text-4xl font-bold font-['Bricolage_Grotesque'] text-[#0B6B50]">
               {item.value}
             </p>
             <p className="text-xs sm:text-sm text-gray-500 mt-2">
@@ -57,7 +57,7 @@ export function CompanyFacts() {
       {/* Description */}
       <div className="bg-[#F9FBFA] border border-gray-200 rounded-xl p-4 sm:p-6">
 
-        <p className="text-[10px] sm:text-xs font-semibold text-gray-500 tracking-wider mb-3">
+        <p className="text-[10px] sm:text-sm font-bold text-gray-500 tracking-wider mb-3 font-['Bricolage_Grotesque']">
           COMPANY DESCRIPTION — SHORT (50 WORDS)
         </p>
 
@@ -68,7 +68,7 @@ export function CompanyFacts() {
         {/* Copy Button */}
         <button
           onClick={handleCopy}
-          className="flex items-center gap-2 border border-gray-300 px-4 py-2 rounded-lg text-[#0B6B50] hover:bg-gray-100 transition"
+          className="flex items-center text-xs font-bold gap-2 border border-gray-300 px-4 py-2 rounded-lg text-[#0B6B50] hover:bg-gray-100 transition"
         >
           {copied ? <Check size={16} /> : <Copy size={16} />}
           {copied ? "Copied!" : "Copy Bio"}

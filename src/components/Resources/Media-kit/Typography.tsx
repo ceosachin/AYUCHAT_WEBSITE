@@ -4,12 +4,12 @@ export default function TypographySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
 
         {/* TAG */}
-        <span className="text-[10px] sm:text-xs font-semibold bg-blue-100 text-[#0B6B50] px-3 py-1 rounded-full">
+        <span className="text-[10px] sm:text-xs font-semibold bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 py-1 rounded-full">
           TYPOGRAPHY
         </span>
 
         {/* TITLE */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 font-['Bricolage_Grotesque']">
           Brand Typefaces
         </h2>
 
@@ -20,14 +20,14 @@ export default function TypographySection() {
         </p>
 
         {/* DARK CARD */}
-        <div className="mt-8 sm:mt-10 bg-[#157a63] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-white">
+        <div className="mt-8 sm:mt-10 bg-gradient-to-br from-[#031d17] via-[#062f26] to-[#02110d] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-white">
 
           {/* DISPLAY */}
           <p className="text-[10px] sm:text-xs text-gray-200 tracking-widest uppercase">
             Display — Bricolage Grotesque
           </p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-3 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-3 leading-tight font-['Bricolage_Grotesque']">
             Send Smarter.
           </h1>
 
@@ -42,7 +42,7 @@ export default function TypographySection() {
             Heading — Bricolage Grotesque
           </p>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-3">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-3 font-['Bricolage_Grotesque']">
             Platform Features & Tools
           </h2>
 

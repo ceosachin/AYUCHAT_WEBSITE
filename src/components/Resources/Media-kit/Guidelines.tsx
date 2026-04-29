@@ -5,12 +5,12 @@ export function Guidelines() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-16 sm:mt-20 lg:mt-24">
 
       {/* Tag */}
-      <p className="text-[10px] sm:text-xs bg-blue-100 text-[#0B6B50] px-3 sm:px-4 py-1 rounded-full inline-block mb-4 font-semibold tracking-wide">
+      <p className="text-[10px] sm:text-xs bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 sm:px-4 py-1 rounded-full inline-block mb-4 font-semibold tracking-wide">
         USAGE GUIDELINES
       </p>
 
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-['Bricolage_Grotesque']">
         Brand Do&apos;s and Don&apos;ts
       </h2>
 
@@ -29,7 +29,7 @@ export function Guidelines() {
             <div className="bg-green-600 text-white p-2 rounded-full">
               <Check size={16} />
             </div>
-            <h3 className="font-semibold text-green-800 text-sm sm:text-base">
+            <h3 className="font-semibold text-green-800 text-sm sm:text-base font-['Bricolage_Grotesque']">
               Do - Correct Usage
             </h3>
           </div>
@@ -70,7 +70,7 @@ export function Guidelines() {
             <div className="bg-red-600 text-white p-2 rounded-full">
               <X size={16} />
             </div>
-            <h3 className="font-semibold text-red-800 text-sm sm:text-base">
+            <h3 className="font-semibold text-red-800 text-sm sm:text-base font-['Bricolage_Grotesque']">
               Don&apos;t - Incorrect Usage
             </h3>
           </div>

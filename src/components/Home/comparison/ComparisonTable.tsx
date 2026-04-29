@@ -13,7 +13,7 @@ const ComparisonTable: React.FC = () => {
         </span>
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mt-3">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mt-3 font-['Bricolage_Grotesque']">
           Why Businesses Choose{" "}
           <span className="text-[#0B6B50]">AyuChat</span>
         </h2>

@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const FeaturedArticle = () => {
   return (
-    <div className="bg-white rounded-2xl border overflow-hidden shadow-sm">
+    <div className="bg-white rounded-2xl  overflow-hidden shadow-sm">
 
       {/* TOP GREEN HERO */}
       <div className="relative h-[200px] sm:h-[240px] md:h-[260px] rounded-t-2xl overflow-hidden flex items-center justify-center">
@@ -81,7 +81,7 @@ const FeaturedArticle = () => {
           Campaigns
         </span>
 
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold mt-3 leading-snug">
+        <h2 className="font-['Bricolage_Grotesque'] text-lg sm:text-xl md:text-2xl font-bold mt-3 leading-snug ">
           The Complete Guide to WhatsApp Bulk Campaigns: Strategy,
           Templates, and ROI in 2026
         </h2>

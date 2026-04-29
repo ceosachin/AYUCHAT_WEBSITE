@@ -18,12 +18,12 @@ const AddOns: React.FC = () => {
       <div className="max-w-6xl mx-auto">
 
         {/* Badge */}
-        <span className="bg-[#E6F4EF] text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold tracking-wide">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-semibold tracking-wide">
           ADD-ONS
         </span>
 
         {/* Heading */}
-        <h2 className="text-5xl font-bold mt-4 text-[#1C1C1C] leading-tight">
+        <h2 className="text-5xl font-bold mt-4 text-[#1C1C1C] leading-tight font-['Bricolage_Grotesque']">
           Customize Your Plan
         </h2>
 
@@ -77,12 +77,12 @@ const AddonCard: React.FC<AddonCardProps> = ({
     <div className="border border-gray-200 rounded-2xl p-6 bg-white/60 backdrop-blur-sm hover:shadow-md transition">
 
       {/* Icon */}
-      <div className="w-10 h-10 rounded-lg bg-[#E6F4EF] flex items-center justify-center text-[#0B6B50] mb-4">
+      <div className="flex w-10 h-10 rounded-lg bg-[#E6F4EF] flex items-center justify-center text-[#0B6B50] mb-4">
         {icon}
       </div>
 
       {/* Title */}
-      <h3 className="font-semibold text-[#1C1C1C] text-base">
+      <h3 className="flex font-semibold text-[#1C1C1C] text-base font-['Bricolage_Grotesque']">
         {title}
       </h3>
 

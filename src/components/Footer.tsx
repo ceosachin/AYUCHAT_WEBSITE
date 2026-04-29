@@ -11,16 +11,16 @@ const Footer: React.FC = () => {
 
           {/* Left Section */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-[#2F8F83] rounded-lg flex items-center justify-center">
-                <MessageCircle/>
-              </div>
-              <h2 className="text-xl font-bold">Ayu
-                <span className="text-[#2F8F83]">Chat</span>
-              </h2>
-            </div>
+            <div className="flex items-center gap-2">
+          <div className="w-7 h-7 bg-[#0B6B50] rounded-md flex items-center justify-center text-white">
+            <img src="/logo.png" alt="" />
+          </div>
+          <span className="text-lg sm:text-xl font-bold">
+            Ayu<span className="text-[#0B6B50]">Chat</span>
+          </span>
+        </div>
 
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-400 text-sm leading-relaxed mt-2">
               India's leading WhatsApp Business API platform for growing businesses.
               <br />
               Official Meta Partner.

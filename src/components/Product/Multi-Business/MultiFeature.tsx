@@ -13,37 +13,31 @@ export default function MultiFeatures() {
       icon: Users,
       title: "Advanced Audience Segmentation",
       desc: "Build campaign audiences using any combination of contact fields — tags, custom attributes, city, last purchase date, campaign history, or opt-in source.",
-      bg: "bg-green-100 text-green-700",
-    },
+     },
     {
       icon: Code,
       title: "Dynamic Personalization Variables",
       desc: "Map template variables to any contact field. Every recipient gets a personalized message automatically.",
-      bg: "bg-gray-200 text-gray-700",
     },
     {
       icon: Clock,
       title: "Smart Rate-Paced Scheduling",
       desc: "Schedule campaigns while staying within Meta’s limits automatically for better delivery.",
-      bg: "bg-yellow-100 text-yellow-700",
     },
     {
       icon: BarChart3,
       title: "Real-Time Per-Message Analytics",
       desc: "Track delivery, reads, replies, and failures with exportable reports.",
-      bg: "bg-purple-100 text-purple-700",
     },
     {
       icon: AlertTriangle,
       title: "Quality Rating Protection Alerts",
       desc: "Get alerts before your WhatsApp quality rating drops or gets restricted.",
-      bg: "bg-red-100 text-red-700",
     },
     {
       icon: Package,
       title: "Multi-Media Message Support",
       desc: "Send images, videos, documents, and interactive messages in campaigns.",
-      bg: "bg-teal-100 text-teal-700",
     },
   ];
 
@@ -52,14 +46,14 @@ export default function MultiFeatures() {
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="inline-block px-3 py-1 text-xs font-semibold bg-green-100 text-green-700 rounded-full mb-4 sm:mb-6">
+        <span className="inline-block px-3 py-2 text-xs font-semibold bg-[#E6F4EF] border border-[#0B6B50]/20 text-green-700 rounded-full mb-4 sm:mb-6">
           CAMPAIGN FEATURES
         </span>
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
           Everything You Need to <br />
-          <span className="text-green-700">
+          <span className="text-[#0B6B50]">
             Run High-Converting Campaigns
           </span>
         </h2>
@@ -79,11 +73,11 @@ export default function MultiFeatures() {
             return (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl p-5 sm:p-6 transition hover:shadow-md hover:border-green-500"
+                className="bg-white border border-gray-200 rounded-xl p-5 sm:p-6 transition hover:shadow-md "
               >
                 {/* Icon */}
                 <div
-                  className={`w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl mb-4 ${item.bg}`}
+                  className={'w-10 h-10 sm:w-12 bg-[#E6F4EF] text-[#0B6B50]  sm:h-12 flex items-center justify-center rounded-xl mb-4'}
                 >
                   <Icon size={18} />
                 </div>

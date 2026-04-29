@@ -28,14 +28,14 @@ export default function StartupStories() {
       <div className="max-w-6xl mx-auto text-center">
 
         {/* Badge */}
-        <div className="inline-block bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium mb-4">
+        <div className="inline-block bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium mb-4">
           STARTUP STORIES
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-['Bricolage_Grotesque']">
           Founders Who{" "}
-          <span className="text-green-600">Grew with AyuChat</span>
+          <span className="text-[#0B6B50]">Grew with AyuChat</span>
         </h2>
 
         {/* Cards */}

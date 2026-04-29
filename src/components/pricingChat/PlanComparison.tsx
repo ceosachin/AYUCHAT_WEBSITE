@@ -22,13 +22,13 @@ const PlanComparison: React.FC = () => {
 
       {/* Badge */}
       <div className="flex justify-center mb-4">
-        <span className="bg-[#E6F4EF] text-[#0B6B50] px-3 sm:px-4 py-1 rounded-full text-[10px] sm:text-xs font-semibold tracking-wide">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 sm:px-4 py-1 rounded-full text-[10px] sm:text-xs font-semibold tracking-wide">
           FULL COMPARISON
         </span>
       </div>
 
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#1C1C1C] leading-tight">
+      <h2 className="font-['Bricolage_Grotesque'] text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#1C1C1C] leading-tight">
         Compare All <span className="text-[#0B6B50]">Plan Features</span>
       </h2>
 
@@ -100,7 +100,7 @@ const PlanComparison: React.FC = () => {
               <Row title="Priority SLA support" starter="—" growth="—" scale="✓" />
 
               {/* Price Row */}
-              <tr className="bg-[#F7F9F8] border-t font-semibold">
+              <tr className="bg-[#F7F9F8]  font-semibold">
                 <td className="p-3 sm:p-4 text-gray-900">
                   Monthly Price
                 </td>

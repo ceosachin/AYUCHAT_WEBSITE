@@ -21,7 +21,7 @@ const CTASection: React.FC = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight font-['Bricolage_Grotesque'] ">
               Start Sending Smarter <br />
               <span className="block mt-2">
                 WhatsApp Campaigns Today

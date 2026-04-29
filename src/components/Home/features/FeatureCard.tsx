@@ -26,7 +26,7 @@ const FeatureCard: React.FC<Props> = ({
       </div>
 
       {/* Title */}
-      <h3 className="font-semibold text-lg">{title}</h3>
+      <h3 className="font-semibold text-lg font-['Bricolage_Grotesque']">{title}</h3>
 
       {/* Description */}
       <p className="text-gray-600 mt-2 text-sm leading-relaxed">

@@ -14,7 +14,7 @@ export default function SystemStatus() {
 
         {/* TEXT */}
         <div>
-          <p className="font-semibold text-green-800">
+          <p className="font-semibold text-green-800 font-['Bricolage_Grotesque']">
             All Systems Operational
           </p>
           <p className="text-xs text-gray-600">
@@ -25,7 +25,7 @@ export default function SystemStatus() {
       </div>
 
       {/* RIGHT */}
-      <button className="flex items-center gap-1 text-green-700 font-medium text-sm hover:gap-2 transition-all">
+      <button className="flex items-center gap-1 text-green-700 font-medium text-sm hover:gap-2 transition-all font-['Bricolage_Grotesque']">
         View Status Page <ArrowRight size={16} />
       </button>
     </div>

@@ -55,7 +55,7 @@ const Stats: React.FC = () => {
           PLATFORM STATS
         </span>
 
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mt-4">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mt-4 font-['Bricolage_Grotesque']">
           Numbers That Matter
         </h2>
       </div>
@@ -99,7 +99,7 @@ type StatBoxProps = {
 
 const StatBox: React.FC<StatBoxProps> = ({ value, label }) => (
   <div className="bg-white border border-gray-100 rounded-xl text-center py-8 sm:py-10 shadow-sm hover:shadow-md transition">
-    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B6B50]">
+    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B6B50] font-['Bricolage_Grotesque']">
       {value}
     </h3>
     <p className="text-gray-600 mt-2 text-sm sm:text-base">

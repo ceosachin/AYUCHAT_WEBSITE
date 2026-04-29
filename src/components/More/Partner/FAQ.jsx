@@ -31,14 +31,14 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Badge */}
-        <span className="bg-green-100 text-green-700 px-4 py-1 rounded-full text-sm font-medium">
+        <span className="bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-4 py-1 rounded-full text-xs font-medium">
           FAQ
         </span>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold mt-4">
+        <h2 className="text-4xl md:text-5xl font-bold mt-4 font-['Bricolage_Grotesque']">
           Partner Program{" "}
-          <span className="text-green-800">Questions</span>
+          <span className="text-[#0B6B50]">Questions</span>
         </h2>
 
         {/* FAQ List */}
@@ -50,14 +50,14 @@ export default function FAQ() {
             return (
               <div
                 key={i}
-                className="border-b pb-4 cursor-pointer"
+                className="border-b border-gray-300 pb-4 cursor-pointer"
                 onClick={() =>
                   setActiveIndex(isOpen ? null : i)
                 }
               >
                 {/* Question */}
                 <div className="flex justify-between items-center">
-                  <h3 className="font-semibold text-lg">
+                  <h3 className="font-semibold text-lg font-['Bricolage_Grotesque']">
                     {item.q}
                   </h3>
 
@@ -65,7 +65,7 @@ export default function FAQ() {
                     className={`w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold transition 
                     ${
                       isOpen
-                        ? "bg-green-800 text-white"
+                        ? "bg-[#0B6B50] text-white "
                         : "bg-gray-200 text-gray-600"
                     }`}
                   >

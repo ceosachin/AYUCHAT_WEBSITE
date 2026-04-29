@@ -84,13 +84,13 @@ export default function Categories() {
         >
           {/* ICON */}
           <div
-            className={`w-12 h-12 flex items-center justify-center rounded-xl mb-4 ${item.bg}`}
+            className='w-12 h-12 flex items-center justify-center rounded-xl mb-4 bg-green-50 text-[#0B6B50]'
           >
             {item.icon}
           </div>
 
           {/* TITLE */}
-          <h3 className="font-semibold text-lg mb-2">
+          <h3 className="font-semibold text-lg mb-2 font-['Bricolage_Grotesque']">
             {item.title}
           </h3>
 

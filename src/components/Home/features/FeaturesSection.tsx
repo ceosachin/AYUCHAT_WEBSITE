@@ -8,12 +8,12 @@ const FeaturesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
 
         {/* Tag */}
-        <span className="inline-block px-3 py-1 text-[10px] sm:text-xs font-semibold bg-blue-100 text-[#0B6B50] rounded-full">
+        <span className="inline-block px-3 py-2 text-[10px] sm:text-xs font-semibold bg-[#E6F4EF] text-[#0B6B50] border border-[#0B6B50]/20 rounded-full">
           PLATFORM FEATURES
         </span>
 
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 leading-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-4 leading-tight font-['Bricolage_Grotesque']">
           Everything You Need <br />
           <span className="text-[#0B6B50]">in One Place</span>
         </h2>
@@ -21,7 +21,7 @@ const FeaturesSection: React.FC = () => {
         {/* Description */}
         <p className="text-gray-600 mt-3 sm:mt-4 max-w-xl text-sm sm:text-base">
           Stop paying for five different tools. AyuChat replaces your bulk
-          messaging, chatbot, CRM, and analytics — all under one roof.
+          messaging, chatbot, CRM, and analytics - all under one roof.
         </p>
 
         {/* Highlight + Grid */}

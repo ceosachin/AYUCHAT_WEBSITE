@@ -31,14 +31,14 @@ export default function WhoShouldApply() {
       <div className="max-w-7xl mx-auto text-center">
         
         {/* Top Badge */}
-        <div className="inline-block px-4 py-1 mb-6 text-sm font-medium text-green-700 bg-green-100 rounded-full">
+        <div className="inline-block px-4 py-1 mb-6 text-xs font-medium bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] rounded-full">
           WHO SHOULD APPLY
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 font-['Bricolage_Grotesque']">
           Perfect for{" "}
-          <span className="text-green-700">Every Kind</span> of Partner
+          <span className="text-[#0B6B50]">Every Kind</span> of Partner
         </h2>
 
         {/* Cards */}
@@ -52,11 +52,11 @@ export default function WhoShouldApply() {
               >
                 {/* Icon */}
                 <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-xl bg-green-100">
-                  <Icon className="w-7 h-7 text-green-700" />
+                  <Icon className="w-7 h-7 text-[#B6B50]" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 font-['Bricolage_Grotesque']">
                   {item.title}
                 </h3>
 

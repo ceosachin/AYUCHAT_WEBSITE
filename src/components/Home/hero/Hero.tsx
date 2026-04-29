@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         {/* Badge */}
         <motion.div
           variants={item}
-          className="inline-flex items-center gap-2 bg-blue-100 border border-blue-200 text-[#0B6B50] px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-5"
+          className="inline-flex items-center gap-2 bg-[#E6F4EF] border border-[#0B6B50]/20 text-[#0B6B50] px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-5"
         >
           <div className="bg-[#0B6B50] text-white w-5 h-5 flex items-center justify-center rounded-full">
             <Check size={12} />
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
         {/* Heading */}
         <motion.h1
           variants={item}
-          className="text-2xl sm:text-4xl md:text-7xl font-extrabold text-gray-900 leading-tight"
+          className="text-2xl sm:text-4xl md:text-7xl font-extrabold text-gray-900 leading-tight font-['Bricolage_Grotesque']"
         >
           Send Smarter.
           <br />
