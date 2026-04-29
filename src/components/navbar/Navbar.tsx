@@ -75,7 +75,6 @@ const Navbar = () => {
 
           <NavItem
             label="Features"
-            grid
             dropdown={[
               {
                 title: "WhatsApp Templates",
@@ -186,11 +185,11 @@ const Navbar = () => {
 
           <MobileDropdown title="Product" toggleMenu={toggleMenu} openMenu={openMenu}>
   <Item label="Hub" onClick={() =>{ navigate("/product/hub");setOpen(false);} }/>
-  <Item label="Multi-Business" onClick={() =>{ navigate("/products/multi-business");setOpen(false);} }/>
+  {/* <Item label="Multi-Business" onClick={() =>{ navigate("/products/multi-business");setOpen(false);} }/>
   <Item label="Bulk Campaigns" onClick={() =>{ navigate("/products/bulk-campaigns");setOpen(false);}} />
   <Item label="Chatbot Builder" onClick={() =>{ navigate("/products/chatbot-builder");setOpen(false);} }/>
   <Item label="Automation Flows" onClick={() =>{ navigate("/products/automation");setOpen(false);} }/>
-  <Item label="Live Inbox" onClick={() =>{ navigate("/products/liveinbox");setOpen(false);} }/>
+  <Item label="Live Inbox" onClick={() =>{ navigate("/products/liveinbox");setOpen(false);} }/> */}
 </MobileDropdown>
 
           <MobileDropdown title="Features" toggleMenu={toggleMenu} openMenu={openMenu}>
