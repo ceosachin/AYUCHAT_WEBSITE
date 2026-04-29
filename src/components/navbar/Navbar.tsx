@@ -8,7 +8,6 @@ import {
   Image,
   HelpCircle,
   BarChart3,
-  Users,
   LayoutTemplate,
   Rocket,
   Handshake,
@@ -23,21 +22,28 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [noAnimation, setNoAnimation] = useState(false);
 
   const toggleMenu = (menu: string) => {
     setOpenMenu(openMenu === menu ? null : menu);
   };
-  useEffect(() => {
-  if (open) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth >= 1024) {
+      setNoAnimation(true);   // disable animation
+      setOpen(false);        // close instantly
 
-  return () => {
-    document.body.style.overflow = "auto";
+      // enable animation again after render
+      setTimeout(() => {
+        setNoAnimation(false);
+      }, 50);
+    }
   };
-}, [open]);
+
+  window.addEventListener("resize", handleResize);
+
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
   return (
     <div className="sticky top-0 z-50 bg-white shadow-sm">
@@ -166,9 +172,11 @@ const Navbar = () => {
 
       {/* MOBILE DRAWER */}
       <div
-        className={`fixed top-0 right-0 h-screen w-[85%] max-w-sm bg-gradient-to-b from-white to-green-50 z-50 shadow-xl flex flex-col transform transition-transform duration-300 ${
-          open ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-screen w-[85%] max-w-sm bg-gradient-to-b from-white to-green-50 z-50 shadow-xl flex flex-col transform ${
+  noAnimation ? "" : "transition-transform duration-300"
+} ${
+  open ? "translate-x-0" : "translate-x-full"
+}`}
       >
         {/* HEADER */}
         <div className="flex justify-between items-center p-4  shadow">
